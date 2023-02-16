@@ -1,0 +1,188 @@
+/* Home */
+*{
+    position: absolute;
+    background: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/* Top-Logo.png */
+.logo {
+    width: 70px;
+    height: 42px;
+    left: 50px;
+    top: 49px;
+
+    background: url(images/Top-Logo.png);
+}
+
+p {
+    position: absolute;
+    width: 527px;
+    height: 41px;
+    left: 336px;
+    top: 50px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    
+    /* Extra 8 */
+    
+    color: #FFE600;        
+}
+
+/* Language */
+.lan li{
+    list-style: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+
+    height: 23px;
+    top: 59px;
+}
+
+.EN {
+    width: 18px;
+    left: 1135px;
+
+    /*FIX THIS*/
+    /* position: absolute;
+    width: 18px;
+    height: 0px;
+    left: 1135px;
+    top: 59px;
+
+    border: 1px solid #FFFFFF; */
+}
+
+.ES {
+    width: 17px;
+    left: 1195px;
+    top: 59px;
+}
+
+/* AMPARO OBANDO */
+h1 {
+    width: 390px;
+    height: 62px;
+    left: 80px;
+    top: 187px;
+    
+    font-family: 'Yantramanav';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    /* letter-spacing: 0.05em; */
+    
+    background: linear-gradient(90deg, #1E11C7 0%, #BC1641 33.33%, #DA1727 66.67%, #FF1808 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* SOFTWARE ENGINEER, BACK END & CLOUD DEVELOPER. */
+h2 {
+    width: 475px;
+    height: 26px;
+    left: 80px;
+    top: 249px;
+    
+    font-family: 'Yantramanav';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;   
+}
+
+/* Exploration zone */
+.exp ul{
+    list-style: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.ab {
+    width: 78px;
+    height: 36px;
+    left: 1068px;
+    top: 231px;
+}
+
+.pr {
+    width: 117px;
+    height: 36px;
+    left: 1068px;
+    top: 398px;
+}
+
+.co {
+    width: 113px;
+    height: 36px;
+    left: 1068px;
+    top: 565px;   
+}
+
+/* Game Zone */
+
+h3 {
+    width: 136px;
+    height: 18px;
+    left: 506px;
+    top: 382px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.game {
+    width: 889px;
+    height: 303px;
+    left: 110px;
+    top: 357px;
+    
+    background: rgba(217, 217, 217, 0.2);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 20px;
+}
+
+.play {
+    width: 109px;
+    height: 109px;
+    left: 531px;
+    top: 434px;        
+}
+
+/* © Copyright 2022. Made by Ampi */
+footer {
+    width: 265px;
+    height: 24px;
+    left: 491px;
+    top: 787px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: rgba(255, 255, 255, 0.7);    
+}

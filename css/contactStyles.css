@@ -1,0 +1,110 @@
+*{
+    position: absolute;
+    background: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/* Top-Logo.png */
+.logo {
+    position: absolute;
+    width: 70px;
+    height: 42px;
+    left: 50px;
+    top: 49px;
+    
+    background: url(images/Top-Logo.png);    
+}
+
+/* Exploration Zone */
+.nav ul{
+    list-style: none;
+    position: absolute;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;    
+}
+
+.nav .ho{
+    width: 58px;
+    height: 30px;
+    left: 574px;
+    top: 48px;
+}
+
+.nav .ab{
+    width: 66px;
+    height: 30px;
+    left: 727px;
+    top: 48px;
+}
+
+.nav .pr{
+    width: 100px;
+    height: 30px;
+    left: 888px;
+    top: 48px;    
+}
+
+.nav .co{
+    width: 96px;
+    height: 30px;
+    left: 1083px;
+    top: 48px;    
+}
+
+/* Footer */
+footer p{
+    width: 262px;
+    height: 27.67px;
+    left: 491px;
+    top: 2499.33px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+footer .logo{
+    width: 54px;
+    height: 32px;
+    left: 41px;
+    top: 2471px;
+    
+    background: url(Ampi-logo-editable-white.png);
+    opacity: 0.7;    
+}
+
+.dis{
+    width: 32px;
+    height: 35.58px;
+    left: 1146px;
+    top: 2467.71px;       
+}
+
+.gm{
+    width: 32px;
+    height: 35.58px;
+    left: 1194px;
+    top: 2467.71px;    
+}
+
+.li{
+    width: 32px;
+    height: 35.58px;
+    left: 1098px;
+    top: 2467.71px;    
+}
+
+.git{
+    width: 32px;
+    height: 35.58px;
+    left: 1050px;
+    top: 2467.71px;    
+}
