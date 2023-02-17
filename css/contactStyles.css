@@ -55,6 +55,192 @@
     top: 48px;    
 }
 
+/* Principal Text */
+.principal {
+    font-family: 'Poppins';
+    font-style: normal;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.principal h1 {
+    width: 272px;
+    height: 60px;
+    left: 467px;
+    top: 225px;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.principal h2 {
+    width: 145px;
+    height: 30px;
+    left: 530px;
+    top: 290px;
+    
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;    
+}
+
+/* Fill Boxes */
+.fill {
+    width: 890px;
+    left: 210px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    opacity: 0.9;
+}
+
+.fillimg {
+    width: 893px;
+    left: 193px;
+}
+
+.na {
+    height: 60px;
+    top: 349px;
+}
+
+.naimg {
+    height: 60px;
+    top: 349px;
+}
+
+.em {
+    height: 60px;
+    top: 428px;
+}
+
+.emimg{
+    height: 60px;
+    top: 428px;    
+}
+
+.me {
+    height: 35px;
+    top: 522px;
+}
+
+.meimg {
+    height: 192px;
+    top: 507px;    
+}
+
+.send {
+    width: 887px;
+    height: 61px;
+    left: 196px;
+    top: 717px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sendimg{
+    height: 60px;
+    top: 718px;    
+}
+
+/* Secondary Text */
+
+.secondary p {
+    height: 30px;
+    left: 138px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.secondary h1 {
+    width: 486px;
+    height: 60px;
+    left: 118px;
+    top: 899px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.secondary h2 {
+    width: 756px;
+    height: 30px;
+    left: 118px;
+    top: 977px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+
+.secondary .email {
+    width: 300px;
+    top: 1076px;
+}
+
+.secondary .discord {
+    width: 171px;
+    top: 1136px;
+}
+
+.secondary .twitter {
+    width: 163px;
+    top: 1196px;
+}
+
+.secondary .dis {
+    width: 32px;
+    height: 36px;
+    left: 94px;
+    top: 1133px;           
+}
+
+.secondary .tw {
+    width: 32px;
+    height: 32px;
+    left: 94px;
+    top: 1194px;
+    
+    opacity: 0.7;
+}
+
+.secondary .em {
+    width: 32px;
+    height: 36px;
+    left: 94px;
+    top: 1073px;
+}
+
 /* Footer */
 footer p{
     width: 262px;
