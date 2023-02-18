@@ -3,6 +3,11 @@
     position: absolute;
     background: #1E1E1E;
     color: #FFFFFF;
+
+    font-family: 'Poppins';
+    font-style: normal;
+
+    list-style: none;
 }
 
 /* Top-Logo.png */
@@ -15,30 +20,8 @@
     background: url(images/Top-Logo.png);
 }
 
-p {
-    position: absolute;
-    width: 527px;
-    height: 41px;
-    left: 336px;
-    top: 50px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-    
-    /* Extra 8 */
-    
-    color: #FFE600;        
-}
-
 /* Language */
 .lan li{
-    list-style: none;
-
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
@@ -50,19 +33,10 @@ p {
 .EN {
     width: 18px;
     left: 1135px;
-
-    /*FIX THIS*/
-    /*
-    width: 18px;
-    height: 0px;
-    left: 1135px;
-    top: 59px;
-
-    border: 1px solid #FFFFFF; */
 }
 
 .ES {
-    width: 17px;
+    width: 18px;
     left: 1195px;
     top: 59px;
 }
@@ -72,7 +46,7 @@ h1 {
     width: 390px;
     height: 62px;
     left: 80px;
-    top: 187px;
+    top: 150px;
     
     font-family: 'Yantramanav';
     font-style: normal;
@@ -86,7 +60,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     
-    text-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* SOFTWARE ENGINEER, BACK END & CLOUD DEVELOPER. */
@@ -94,7 +68,7 @@ h2 {
     width: 475px;
     height: 26px;
     left: 80px;
-    top: 249px;
+    top: 229px;
     
     font-family: 'Yantramanav';
     font-style: normal;
@@ -105,83 +79,71 @@ h2 {
 
 /* Exploration zone */
 .exp a{
-    list-style: none;
     text-decoration: none;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 36px;
     
     transition: 0.2s;
 }
 
 .exp a:hover {
-    text-shadow: 0 0 10px #DA1727, 0 0 40px #DA1727, 0 0 80px #DA1727;
+    opacity: 0.5s;
 }
 
 .ab {
-    list-style: none;
-
     width: 78px;
     height: 36px;
     left: 1068px;
-    top: 231px;
+    top: 278px;
 }
 
 .pr {
-    list-style: none;
-
     width: 117px;
     height: 36px;
     left: 1068px;
-    top: 398px;
+    top: 378px;
 }
 
-.co {
-    list-style: none;
-
-    width: 113px;
-    height: 36px;
+.co {    
+    width: 0px;
+    height: 0px;
     left: 1068px;
-    top: 565px;   
+    top: 480px;   
 }
 
 /* Game Zone */
 
 h3 {
-    width: 136px;
-    height: 18px;
-    left: 506px;
-    top: 382px;
+    width: 500px;
+    height: 0px;
+    left: 400px;
+    top: 372px;
     
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 18px;
 }
 
-.game {
-    width: 889px;
-    height: 303px;
-    left: 110px;
-    top: 357px;
+.material-symbols-rounded {
+    width: 109px;
+    height: 0px;
+    left: 440px;
+    top: 404px;        
+}
+
+.game { /*Square*/
+    width: 880px; /*Ancho*/
+    height: 220px; /*Largo*/
+    left: 80px;
+    top: 300px;
     
     background: rgba(217, 217, 217, 0.2);
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7px);
-    /* Note: backdrop-filter has minimal browser support */
     
     border-radius: 20px;
-}
-
-.play {
-    width: 109px;
-    height: 109px;
-    left: 531px;
-    top: 434px;        
 }
 
 /* © Copyright 2022. Made by Ampi */
@@ -189,13 +151,11 @@ footer {
     width: 265px;
     height: 24px;
     left: 491px;
-    top: 787px;
+    top: 597px;
     
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 24px;
     
-    opacity: 0.6;    
+    opacity: 0.2;    
 }
