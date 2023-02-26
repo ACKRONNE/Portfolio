@@ -1,12 +1,14 @@
 *{
     position: absolute;
-    background: #1E1E1E;
+    background: #101010;
     color: #FFFFFF;
+
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Top-Logo.png */
 .logo {
-    position: absolute;
     width: 70px;
     height: 42px;
     left: 50px;
@@ -16,36 +18,24 @@
 }
 
 /* Exploration Zone */
-.nav ul a{
+nav{
     height: 30px;
-    top: 48px;
+    top: 55px;
 
-    position: absolute;
-    text-decoration: none;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+nav a{
+    position: relative;
+    left: 730px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 30px;    
-}
-
-.nav .ab{
-    list-style: none;
-    width: 66px;
-    left: 727px;
-}
-
-.nav .pr{
-    list-style: none;
-    width: 100px;
-    left: 888px; 
-}
-
-.nav .co{
-    list-style: none;
-    width: 96px;
-    left: 1083px;  
 }
 
 /* Principal Text */

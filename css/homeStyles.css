@@ -1,7 +1,7 @@
 /* Home */
 *{
     position: absolute;
-    background: #1E1E1E;
+    background: #101010;
     color: #FFFFFF;
 
     font-family: 'Poppins';
@@ -53,7 +53,6 @@ h1 {
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
-    /* letter-spacing: 0.05em; */
     
     background: linear-gradient(90deg, #1E11C7 0%, #BC1641 33.33%, #DA1727 66.67%, #FF1808 100%);
     -webkit-background-clip: text;
@@ -84,26 +83,26 @@ h2 {
     font-weight: 300;
     font-size: 18px;
     line-height: 36px;
-    
-    transition: 0.2s;
 }
 
 .exp a:hover {
-    opacity: 0.5s;
+    
+    color: linear-gradient(left, #1E11C7 0%, #BC1641 33.33%, #DA1727 66.67%, #FF1808 100%);
+    
 }
 
 .ab {
     width: 78px;
     height: 36px;
     left: 1068px;
-    top: 278px;
+    top: 248px;
 }
 
 .pr {
     width: 117px;
     height: 36px;
     left: 1068px;
-    top: 378px;
+    top: 358px;
 }
 
 .co {    
@@ -126,16 +125,16 @@ h3 {
     line-height: 18px;
 }
 
-.material-symbols-rounded {
+.material-symbols-rounded { /* play button */
     width: 109px;
     height: 0px;
     left: 440px;
     top: 404px;        
 }
 
-.game { /*Square*/
-    width: 880px; /*Ancho*/
-    height: 220px; /*Largo*/
+.game {             /*Square*/
+    width: 880px;   /*Ancho*/
+    height: 220px;  /*Largo*/
     left: 80px;
     top: 300px;
     
@@ -150,7 +149,7 @@ h3 {
 footer {
     width: 265px;
     height: 24px;
-    left: 491px;
+    left: 495px;
     top: 597px;
     
     font-weight: 500;
