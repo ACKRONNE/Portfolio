@@ -1,5 +1,5 @@
 *{
-    background: #101010;
+    background: #060600;
     color: #FFFFFF;
 
     font-family: 'Poppins';
@@ -32,7 +32,6 @@ nav{
     min-width: 450px;
     display: flex;
     justify-content: space-around;
-    /* background-color: transparent; */
 }
 
 nav a{
