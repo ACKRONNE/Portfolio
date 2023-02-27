@@ -3,10 +3,16 @@
     background: #101010;
     color: #FFFFFF;
 
+    font-family: 'Poppins';
+    font-style: normal;
+
     text-decoration: none;
     list-style: none;
 }
-
+*::selection {
+    background-color: #FFFFFF;
+    color: black;
+}
 /* Top-Logo.png */
 .logo {
     width: 70px;
@@ -19,23 +25,30 @@
 
 /* Exploration Zone */
 nav{
-    height: 30px;
+    height: 0px;
     top: 55px;
 
     min-width: 450px;
     display: flex;
     justify-content: space-around;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 nav a{
     position: relative;
     left: 730px;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
+}
+
+nav:hover a{
+    filter: blur(5px);
+    transition: .2s;
+}
+
+nav a:hover{
+    filter: blur(0px);
 }
 
 /* Principal Text */
@@ -88,16 +101,15 @@ nav a{
 }
 
 /* Download Button */
-.button {
+.background a {
     width: 179px;
     height: 36px;
     left: 392px;
     top: 540px;
 }
 
-.button:hover{
+.background:hover{
     opacity: 0.3;
-    transition-delay: 0.1s;
 }
 
 /* Footer */
