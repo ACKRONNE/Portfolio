@@ -2,6 +2,9 @@
     background: #060600;
     color: #FFFFFF;
 
+    font-family: 'Poppins';
+    font-style: normal;
+
     text-decoration: none;
     list-style: none;
 }
@@ -55,8 +58,6 @@ nav a:hover{
 /* Principal Text */
 .principal {
     position: absolute;
-    font-family: 'Poppins';
-    font-style: normal;
 
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -100,9 +101,7 @@ footer p{
     height: 27.67px;
     left: 491px;
     top: 600px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

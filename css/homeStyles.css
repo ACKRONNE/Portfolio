@@ -40,29 +40,58 @@
     align-items: center;
     justify-content: space-between;
 }
-.lan a{
+
+.lan:hover a {
+    text-shadow: 0px -2px red,
+                 0px 2px cyan,
+                 -2px 0px red,
+                 2px 0px cyan;
+}
+
+.lan a::before {
+    content: attr(data-text);
     position: relative;
-    color: #a0a0a0;
-    font-size: 15px;
-    letter-spacing: 0.5px;
+    width: 70px;
+    height: 42px;
+    left: 19px;
+    top: 0px;
     
+    color: white;
 }
-.lan a:after{
-    content: "";
-    position: absolute;
-    background:  #FFFFFF;
-    height: 2px;
-    width: 0;
-    left: 0;
-    top: -2px;
-    transition: 0.3s;
+
+ .lan:hover a::before {
+    animation: animate 5ms ease-in-out infinite;
 }
-.lan a:hover{
-    color: #ffffff;
+
+@keyframes animate {
+    0%, 100% {
+        top: -7px;
+        left: 0;
+        opacity: 0.5;
+    }
+    20% {
+        top: 0px;
+        left: -10;
+        opacity: 0.7;
+    }
+    40% {
+        top: 7px;
+        left: 0;
+        opacity: 0.2;
+    }
+    60% {
+        top: 0px;
+        left: 10px;
+        opacity: 0.3;
+    }
+    0%,100% {
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+    }
 }
-.lan a:hover:after{
-    width: 100%;
-}
+
+
 
 /* AMPARO OBANDO */
 h1 {
@@ -176,7 +205,6 @@ ul li:hover a::before {
 
 
 /* Game Zone */
-
 .material-symbols-rounded { /* play button */
     position: absolute;
     width: 159px;
