@@ -51,47 +51,12 @@
 .lan a::before {
     content: attr(data-text);
     position: relative;
-    width: 70px;
-    height: 42px;
-    left: 19px;
-    top: 0px;
-    
-    color: white;
+    left: 18.7px;
 }
 
  .lan:hover a::before {
     animation: animate 5ms ease-in-out infinite;
 }
-
-@keyframes animate {
-    0%, 100% {
-        top: -7px;
-        left: 0;
-        opacity: 0.5;
-    }
-    20% {
-        top: 0px;
-        left: -10;
-        opacity: 0.7;
-    }
-    40% {
-        top: 7px;
-        left: 0;
-        opacity: 0.2;
-    }
-    60% {
-        top: 0px;
-        left: 10px;
-        opacity: 0.3;
-    }
-    0%,100% {
-        top: 0;
-        left: 0;
-        opacity: 0.9;
-    }
-}
-
-
 
 /* AMPARO OBANDO */
 h1 {
