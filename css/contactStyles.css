@@ -8,9 +8,14 @@
     text-decoration: none;
     list-style: none;
 }
+
 *::selection {
     background-color: #FFFFFF;
     color: black;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Top-Logo.png */
@@ -172,20 +177,77 @@ form button:hover{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 
-
 /* social contact */
 .social-icons {
     margin-left: 118px;
     margin-top: 220px;
 }
 
-.social-icons svg{
+.social-icons svg , .social-icons h2{
+    display: inline;
+
+    font-weight: 300;
+    font-size: 16px;
+
     width: 50px;
     height: 35px;
-    margin-top: 10px;
+    margin-top: 10px;    
 }
 
-Footer
+.social-icons li {
+    cursor: pointer;
+}
+
+/* Copied notification */
+
+.content {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    left: 260px;
+    top: -40px;
+    font-size: 13px;
+    font-weight: 300;
+
+    background-color: #0c0c0c;
+    padding: 2px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translate(-50%,-20px);
+}
+
+.popup.active {
+    animation: popup 1s ease-in-out forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%,-20px);
+    }
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0px);
+    }
+    80% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0px);
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, -20px);
+    }
+}
+
+/* Footer */
 footer p{
     position: absolute;
     width: 262px;
@@ -201,7 +263,6 @@ footer p{
     
     opacity: 0.6;
 }
-
 
 /* Icons from the Footer */
 .footer-line {
