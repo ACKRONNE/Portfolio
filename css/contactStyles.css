@@ -15,8 +15,7 @@
 
 /* Top-Logo.png */
 .logo {
-    position: absolute;
-    width: 70px;
+    position: absolute;    
     height: 42px;
     left: 50px;
     top: 49px;
@@ -55,43 +54,139 @@ nav a:hover{
     filter: blur(0px);
 }
 
-/* Principal Text */
-.principal {
-    position: absolute;
-
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+/* Form */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.principal h1 {
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+
+    width: 70%;
+
+    max-width: 600px;
+    margin-top: 190px;
+}
+
+form h1 {
     position: absolute;
     width: 272px;
     height: 60px;
-    left: 467px;
-    top: 225px;
+    top: 110px;
 
     font-weight: 400;
     font-size: 40px;
     line-height: 60px;
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    text-shadow: 4px 4px 4px rgba(73, 73, 73, 0.25);
+    background-color: transparent;
 }
 
-.principal h2 {
+form h2 {
     position: absolute;
     width: 145px;
     height: 30px;
-    left: 530px;
-    top: 290px;
-    
+    top: 180px;
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
     font-weight: 300;
     font-size: 20px;
-    line-height: 30px;    
+    line-height: 30px;
+    
+    text-shadow: 4px 4px 4px rgba(97, 97, 97, 0.25);
+    background-color: transparent;
 }
 
-.icons8-logotipo-de-la-discordia { 
-    display: inline-block;
-    width: 30px;
+form input , form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+
+    font-size: 14px;
+
+    background: #0c0c0c; /*color 1 option*/
+    /* background: linear-gradient(90deg, #0e0e0e 0%, rgba(208, 3, 3, 0) 100%); color 2 option */
+    backdrop-filter: blur(2px);
+
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+form button {
+    margin-top: 5px;
+    padding: 15px;
+    border: 0;
+
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+    background: linear-gradient(270deg, rgba(255, 24, 8, 0.9) 0%, rgba(144, 21, 103, 0.731771) 49.48%, rgba(144, 21, 103, 0.731771) 49.49%, rgba(30, 17, 199, 0.56) 100%);
+    backdrop-filter: blur(2px);
+}
+
+.secondary h1 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 118px;
+    top: 700px;
+    
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+
+    background-color: transparent;
+    text-shadow: 4px 4px 4px rgba(97, 97, 97, 0.111);
+}
+
+.secondary h2 {
+    position: absolute;
+    width: 100%;
     height: 30px;
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTQxLjYyNSwxMC43Njk1M2MtMy45ODA0NywtMy4yMDMxMyAtMTAuMjc3MzQsLTMuNzQ2MDkgLTEwLjU0Njg3LC0zLjc2NTYzYy0wLjQxNzk3LC0wLjAzNTE2IC0wLjgxNjQxLDAuMTk5MjIgLTAuOTg4MjgsMC41ODU5NGMtMC4wMTU2MiwwLjAyMzQ0IC0wLjE1MjM0LDAuMzM5ODQgLTAuMzA0NjksMC44MzIwM2MyLjYzMjgxLDAuNDQ1MzEgNS44NjcxOSwxLjMzOTg0IDguNzkyOTcsMy4xNTYyNWMwLjQ2ODc1LDAuMjg5MDYgMC42MTMyOCwwLjkwNjI1IDAuMzI0MjIsMS4zNzVjLTAuMTkxNDEsMC4zMDg1OSAtMC41MTU2MiwwLjQ3NjU2IC0wLjg1MTU2LDAuNDc2NTZjLTAuMTc5NjksMCAtMC4zNjMyOCwtMC4wNTA3OCAtMC41MjczNCwtMC4xNTIzNGMtNS4wMzEyNSwtMy4xMjEwOSAtMTEuMzEyNSwtMy4yNzczNCAtMTIuNTIzNDQsLTMuMjc3MzRjLTEuMjEwOTQsMCAtNy40OTYwOSwwLjE1NjI1IC0xMi41MjM0NCwzLjI3NzM0Yy0wLjQ2ODc1LDAuMjkyOTcgLTEuMDg1OTQsMC4xNDg0NCAtMS4zNzUsLTAuMzIwMzFjLTAuMjkyOTcsLTAuNDcyNjYgLTAuMTQ4NDQsLTEuMDg1OTQgMC4zMjAzMSwtMS4zNzg5MWMyLjkyNTc4LC0xLjgxMjUgNi4xNjAxNiwtMi43MTA5NCA4Ljc5Mjk3LC0zLjE1MjM0Yy0wLjE1MjM0LC0wLjQ5NjA5IC0wLjI4OTA2LC0wLjgwODU5IC0wLjMwMDc4LC0wLjgzNTk0Yy0wLjE3NTc4LC0wLjM4NjcyIC0wLjU3MDMxLC0wLjYyODkxIC0wLjk5MjE5LC0wLjU4NTk0Yy0wLjI2OTUzLDAuMDE5NTMgLTYuNTY2NDEsMC41NjI1IC0xMC42MDE1NiwzLjgwODU5Yy0yLjEwNTQ3LDEuOTQ5MjIgLTYuMzIwMzEsMTMuMzM5ODQgLTYuMzIwMzEsMjMuMTg3NWMwLDAuMTc1NzggMC4wNDY4OCwwLjM0Mzc1IDAuMTMyODEsMC40OTYwOWMyLjkwNjI1LDUuMTA5MzggMTAuODM5ODQsNi40NDUzMSAxMi42NDg0NCw2LjUwMzkxYzAuMDA3ODEsMCAwLjAxOTUzLDAgMC4wMzEyNSwwYzAuMzIwMzEsMCAwLjYyMTA5LC0wLjE1MjM0IDAuODA4NTksLTAuNDEwMTZsMS44MjgxMywtMi41MTU2MmMtNC45MzM1OSwtMS4yNzM0NCAtNy40NTMxMiwtMy40Mzc1IC03LjU5NzY2LC0zLjU2NjQxYy0wLjQxNDA2LC0wLjM2MzI4IC0wLjQ1MzEyLC0wLjk5NjA5IC0wLjA4NTk0LC0xLjQxMDE2YzAuMzYzMjgsLTAuNDE0MDYgMC45OTYwOSwtMC40NTMxMiAxLjQxMDE2LC0wLjA4OTg0YzAuMDU4NTksMC4wNTQ2OSA0LjY5OTIyLDMuOTkyMTkgMTMuODI0MjIsMy45OTIxOWM5LjE0MDYzLDAgMTMuNzgxMjUsLTMuOTUzMTIgMTMuODI4MTMsLTMuOTkyMTljMC40MTQwNiwtMC4zNTkzNyAxLjA0Mjk3LC0wLjMyNDIyIDEuNDEwMTYsMC4wOTM3NWMwLjM2MzI4LDAuNDE0MDYgMC4zMjQyMiwxLjA0Mjk3IC0wLjA4OTg0LDEuNDA2MjVjLTAuMTQ0NTMsMC4xMjg5MSAtMi42NjQwNiwyLjI5Mjk3IC03LjU5NzY2LDMuNTY2NDFsMS44MjgxMywyLjUxNTYzYzAuMTg3NSwwLjI1NzgxIDAuNDg4MjgsMC40MTAxNiAwLjgwODU5LDAuNDEwMTZjMC4wMTE3MiwwIDAuMDIzNDQsMCAwLjAzMTI1LDBjMS44MDg1OSwtMC4wNTg1OSA5Ljc0MjE5LC0xLjM5NDUzIDEyLjY0ODQ0LC02LjUwMzkxYzAuMDg1OTQsLTAuMTUyMzQgMC4xMzI4MSwtMC4zMjAzMSAwLjEzMjgxLC0wLjQ5NjA5YzAsLTkuODQ3NjYgLTQuMjE0ODQsLTIxLjIzODI4IC02LjM3NSwtMjMuMjMwNDd6TTE4LjUsMzBjLTEuOTMzNTksMCAtMy41LC0xLjc4OTA2IC0zLjUsLTRjMCwtMi4yMTA5NCAxLjU2NjQxLC00IDMuNSwtNGMxLjkzMzU5LDAgMy41LDEuNzg5MDYgMy41LDRjMCwyLjIxMDk0IC0xLjU2NjQxLDQgLTMuNSw0ek0zMS41LDMwYy0xLjkzMzU5LDAgLTMuNSwtMS43ODkwNiAtMy41LC00YzAsLTIuMjEwOTQgMS41NjY0MSwtNCAzLjUsLTRjMS45MzM1OSwwIDMuNSwxLjc4OTA2IDMuNSw0YzAsMi4yMTA5NCAtMS41NjY0MSw0IC0zLjUsNHoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=') 50% 50% no-repeat;
-    background-size: 100%; 
+    left: 118px;
+    top: 800px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    background-color: transparent;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+
+/* social contact */
+.social-icons {
+    margin-left: 118px;
+    margin-top: 220px;
+}
+
+.social-icons svg{
+    width: 50px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer .footer-line , p, footer .img , .top-txt , footer li{
+    /* background-color: aquamarine; */
+    
 }
 
 /* Footer */
@@ -101,7 +196,9 @@ footer p{
     height: 27.67px;
     left: 491px;
     top: 600px;
-
+    
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -116,7 +213,7 @@ footer p{
     width: 1200px;
     height: 1px;
     left: 60px;
-    top: 599px;
+    top:  1136px;
 
     opacity: .5;
     background-color: #FFFFFF;
@@ -127,7 +224,7 @@ footer p{
     position: absolute;    
     width: 55px;
     height: 35px;
-    top: 610px;
+    top: 1143px;
     left: 60px;
     
     background: url("images\Footer-logo.png") no-repeat;
@@ -136,7 +233,7 @@ footer p{
 /* text */
 footer p{
     position: absolute;
-    top: 605px;
+    top: 1136px;
     width: 150px;
     font-size: 12px;
     left: 1000px;
@@ -146,7 +243,7 @@ footer p{
 
 .top-txt {
     position: absolute;
-    top: 620px;
+    top: 1150px;
     font-size: 12px;
     left: 1180px;
 
@@ -155,14 +252,16 @@ footer p{
 /* social icons */
 footer ul{
     position: absolute;
-    margin-top: 605px;
+    top: 1130px;
     left: 550px;
     width: 150px;
 
     background-color: transparent;
+    /* background-color: aquamarine; */
 }
 
 footer li{
+    position: relative;
     display: inline;
     margin-left: 10px;
 }

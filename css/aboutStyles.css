@@ -104,22 +104,6 @@ nav a:hover{
 }
 
 /* Footer */
-footer p{
-    position: absolute;
-    width: 262px;
-    height: 27.67px;
-    left: 491px;
-    top: 600px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    
-    opacity: 0.6;
-}
-
 
 /* Icons from the Footer */
 .footer-line {
