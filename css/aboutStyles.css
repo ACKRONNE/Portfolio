@@ -8,10 +8,16 @@
     text-decoration: none;
     list-style: none;
 }
+
 *::selection {
     background-color: #FFFFFF;
     color: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Top-Logo.png */
 .logo {
     position: absolute;
@@ -25,18 +31,17 @@
 
 /* Exploration Zone */
 nav{
-    position: absolute;
-    height: 0px;
-    top: 55px;
+    width: 100%;    
+}
 
-    min-width: 450px;
-    display: flex;
-    justify-content: space-around;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
 nav a{
-    position: relative;
-    left: 730px;
+    display: inline-block;
+    margin: 32px 40px;
 
     font-weight: 400;
     font-size: 17px;
@@ -90,28 +95,27 @@ nav a:hover{
 /* Paragraph */
 .principal p {
     position: absolute;
-    width: 930px;
-    left: 200px;
-    top: 290px;
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 300px;
     
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
+
     line-height: 26px;
     justify-content: center;
     text-align: justify;    
 }
 
 /* Footer */
-
-/* Icons from the Footer */
 .footer-line {
     position: absolute;
-    width: 1200px;
+    width: calc(100% - 10%);
     height: 1px;
-    left: 60px;
-    top: 599px;
+    left: calc(100% - 95.4%);
+    top:  1136px;
 
     opacity: .5;
     background-color: #FFFFFF;
@@ -122,42 +126,46 @@ nav a:hover{
     position: absolute;    
     width: 55px;
     height: 35px;
-    top: 610px;
-    left: 60px;
+    top: 1143px;
+    left: calc(100% - 95.4%);
     
     background: url("images\Footer-logo.png") no-repeat;
 }
 
 /* text */
-footer p{
+footer h4{
     position: absolute;
-    top: 605px;
+    top: 1136px;
     width: 150px;
+
+    font-weight: 300;
     font-size: 12px;
-    left: 1000px;
-    opacity: 1;
-    color: #FFFFFF;
+
+    left: calc(100% - 25%);
 }
 
 .top-txt {
     position: absolute;
-    top: 620px;
+    top: 1152px;
     font-size: 12px;
-    left: 1180px;
+    left: calc(100% - 11.4%);
 
+    cursor: pointer;
 }
 
 /* social icons */
 footer ul{
     position: absolute;
-    margin-top: 605px;
-    left: 550px;
+    top: 1130px;
+    left: 40%;
     width: 150px;
 
     background-color: transparent;
+    /* background-color: aquamarine; */
 }
 
 footer li{
+    position: relative;
     display: inline;
     margin-left: 10px;
 }

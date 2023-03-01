@@ -30,22 +30,18 @@ html {
 
 /* Exploration Zone */
 nav{
-    position: absolute;
-    height: 0px;
-    top: 55px;
+    width: 100%;    
+}
 
-    min-width: 450px;
-    display: flex;
-    justify-content: space-around;
-    background-color: transparent;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
 
 nav a{
-    position: relative;
-    left: 730px;
+    display: inline-block;
+    margin: 32px 40px;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
 }
@@ -75,45 +71,36 @@ form {
     padding: 2vw 4vw;
 
     width: 70%;
-
     max-width: 600px;
-    margin-top: 190px;
 }
 
-form h1 {
+form h1 , form h2 {
     position: absolute;
-    width: 272px;
-    height: 60px;
-    top: 110px;
-
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
 
     width: 50%;
     display: flex;
     justify-content: center;
-    
+
     text-shadow: 4px 4px 4px rgba(73, 73, 73, 0.25);
     background-color: transparent;
 }
 
+form h1 {
+    height: 60px;
+    top: 115px;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+}
+
 form h2 {
-    position: absolute;
-    width: 145px;
     height: 30px;
     top: 180px;
-
-    width: 50%;
-    display: flex;
-    justify-content: center;
 
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
-    
-    text-shadow: 4px 4px 4px rgba(97, 97, 97, 0.25);
-    background-color: transparent;
 }
 
 form input , form textarea {
@@ -149,38 +136,36 @@ form button:hover{
     opacity: .7;
 }
 
-.secondary h1 {
+.secondary h1 , .secondary h2 {
     position: absolute;
-    height: 60px;
     left: 118px;
-    top: 700px;
-    
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 60px;
 
     background-color: transparent;
     text-shadow: 4px 4px 4px rgba(97, 97, 97, 0.111);
 }
 
+.secondary h1 {
+    height: 60px;
+    top: 700px;
+    
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+}
+
 .secondary h2 {
-    position: absolute;
     height: 30px;
-    left: 118px;
-    top: 800px;
+    top: 780px;
 
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
-
-    background-color: transparent;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 
 /* social contact */
 .social-icons {
     margin-left: 118px;
-    margin-top: 220px;
+    margin-top: 70px;
 }
 
 .social-icons svg , .social-icons h2{
@@ -189,17 +174,16 @@ form button:hover{
     font-weight: 300;
     font-size: 16px;
 
-    width: 50px;
+    margin: 0px 8px;
     height: 35px;
-    margin-top: 10px;    
+    margin-top: 20px;    
 }
 
-.social-icons li {
+.social-icons li h2 {
     cursor: pointer;
 }
 
 /* Copied notification */
-
 .content {
     position: relative;
 }
@@ -248,28 +232,12 @@ form button:hover{
 }
 
 /* Footer */
-footer p{
-    position: absolute;
-    width: 262px;
-    height: 27.67px;
-    left: 491px;
-    top: 600px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    
-    opacity: 0.6;
-}
-
 /* Icons from the Footer */
 .footer-line {
     position: absolute;
-    width: 1200px;
+    width: calc(100% - 10%);
     height: 1px;
-    left: 60px;
+    left: calc(100% - 95.4%);
     top:  1136px;
 
     opacity: .5;
@@ -282,27 +250,28 @@ footer p{
     width: 55px;
     height: 35px;
     top: 1143px;
-    left: 60px;
+    left: calc(100% - 95.4%);
     
     background: url("images\Footer-logo.png") no-repeat;
 }
 
 /* text */
-footer p{
+footer h4{
     position: absolute;
     top: 1136px;
     width: 150px;
+
+    font-weight: 300;
     font-size: 12px;
-    left: 1000px;
-    opacity: 1;
-    color: #FFFFFF;
+
+    left: calc(100% - 25%);
 }
 
 .top-txt {
     position: absolute;
-    top: 1150px;
+    top: 1152px;
     font-size: 12px;
-    left: 1180px;
+    left: calc(100% - 11.4%);
 
     cursor: pointer;
 }
@@ -311,7 +280,7 @@ footer p{
 footer ul{
     position: absolute;
     top: 1130px;
-    left: 550px;
+    left: 40%;
     width: 150px;
 
     background-color: transparent;
