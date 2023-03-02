@@ -56,6 +56,22 @@ nav a:hover{
     filter: blur(0px);
 }
 
+/* ↓ ↓ ↓  Principal Text ↓ ↓ ↓  */
+.principal{
+  position: absolute;
+  top: 222px;
+  left: 10%;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  text-shadow: 4px 4px 4px rgba(99, 99, 99, 0.25);
+}
+
 /* ↓ ↓ ↓  Proyects Cards ↓ ↓ ↓  */
 :root {
     --bg-color: rgb(20, 20, 20);
@@ -65,7 +81,7 @@ nav a:hover{
 #cards {
     display: flex;
     flex-wrap: wrap;    
-    margin-left: 15%;
+    margin-left: 10%;
     gap: 8px;  
     max-width: 916px;
     width: calc(100% - 20px);
@@ -76,7 +92,7 @@ nav a:hover{
   }
   
   .card {
-    top: 100px;
+    top: 180px;
     background-color: var(--bg-color);
     border-radius: 10px;
     cursor: pointer;
