@@ -18,26 +18,40 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
 //Copy to clickboard
-const text = document.querySelector(".content h2");
 const popup = document.querySelector(".popup");
 
-text.addEventListener("click", () => {
-  popup.classList.add("active");
-  copyToClipBoard();
-});
+let text = document.getElementById('co').innerHTML;
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      popup.classList.add("active");
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+
+  let text1 = document.getElementById('di').innerHTML;
+  const copyContent1 = async () => {
+    try {
+      await navigator.clipboard.writeText(text1);
+      popup.classList.add("active");
+      
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+
+  let text2 = document.getElementById('tw').innerHTML;
+  const copyContent2 = async () => {
+    try {
+      await navigator.clipboard.writeText(text2);
+      popup.classList.add("active");
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+
 popup.addEventListener("animationend", () => {
   popup.classList.remove("active");
 });
-
-function copyToClipBoard() {
-  const textarea = document.createElement("textarea");
-  textarea.setAttribute("readonly", "");
-  textarea.value = text.innerText;
-  textarea.style.position = "absolute";
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand("copy");
-  document.body.removeChild(textarea);
-}

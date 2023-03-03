@@ -1,4 +1,8 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
     background: #060600;
     color: #FFFFFF;
 
@@ -18,7 +22,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Top-Logo.png */
+/* ↓ ↓ ↓ Top-Logo.png ↓ ↓ ↓*/
 .logo {
     position: absolute;    
     height: 42px;
@@ -28,7 +32,7 @@ html {
     background: url(images/Top-Logo.png);    
 }
 
-/* Exploration Zone */
+/* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
 nav{
     width: 100%;    
 }
@@ -40,7 +44,7 @@ nav ul {
 
 nav a{
     display: inline-block;
-    margin: 32px 40px;
+    margin: 60px 40px;
 
     font-weight: 400;
     font-size: 17px;
@@ -55,20 +59,20 @@ nav a:hover{
     filter: blur(0px);
 }
 
-/* Form */
+/* ↓ ↓ ↓ Form ↓ ↓ ↓*/
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 form {
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
+    margin-top: -40px;
 
     width: 70%;
     max-width: 600px;
@@ -76,6 +80,8 @@ form {
 
 form h1 , form h2 {
     position: absolute;
+    margin-top: 40px;
+    margin-left: -70px;
 
     width: 50%;
     display: flex;
@@ -89,7 +95,7 @@ form h1 {
     height: 60px;
     top: 115px;
 
-    font-weight: 400;
+    font-weight: 300;
     font-size: 40px;
     line-height: 60px;
 }
@@ -162,10 +168,10 @@ form button:hover{
     line-height: 30px;
 }
 
-/* social contact */
+/* ↓ ↓ ↓ social contact ↓ ↓ ↓*/
 .social-icons {
     margin-left: 118px;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .social-icons svg , .social-icons h2{
@@ -174,16 +180,16 @@ form button:hover{
     font-weight: 300;
     font-size: 16px;
 
-    margin: 0px 8px;
+    margin: 20px 8px 0px 0px;
     height: 35px;
-    margin-top: 20px;    
+    
 }
 
 .social-icons li h2 {
     cursor: pointer;
 }
 
-/* Copied notification */
+/* ↓ ↓ ↓ Copied notification ↓ ↓ ↓ */
 .content {
     position: relative;
 }
@@ -191,17 +197,23 @@ form button:hover{
 .popup {
     position: absolute;
     left: 260px;
-    top: -40px;
     font-size: 13px;
-    font-weight: 300;
+    width: 70px;
+    top: -10px;
 
-    background-color: #0c0c0c;
-    padding: 2px;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
+    
 
     transform: translate(-50%,-20px);
+}
+
+.popup h4 {
+    background-color: transparent;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
 }
 
 .popup.active {
@@ -231,7 +243,7 @@ form button:hover{
     }
 }
 
-/* Footer */
+/* ↓ ↓ ↓ Footer ↓ ↓ ↓*/
 .footer-line {
     position: absolute;
     width: calc(100% - 10%);
@@ -243,7 +255,7 @@ form button:hover{
     background-color: #FFFFFF;
 }
 
-/* logo */
+/* ↓ ↓ ↓ logo ↓ ↓ ↓*/
 .img{
     position: absolute;    
     width: 55px;
@@ -254,10 +266,10 @@ form button:hover{
     background: url("images\Footer-logo.png") no-repeat;
 }
 
-/* text */
+/* ↓ ↓ ↓ copyright text ↓ ↓ ↓*/
 footer h4{
     position: absolute;
-    top: 1136px;
+    top: 1149px;
     width: 150px;
 
     font-weight: 300;
@@ -266,19 +278,20 @@ footer h4{
     left: calc(100% - 25%);
 }
 
+/* ↓ ↓ ↓ back to top ↓ ↓ ↓*/
 .top-txt {
     position: absolute;
-    top: 1152px;
+    top: 1149px;
     font-size: 12px;
     left: calc(100% - 11.4%);
 
     cursor: pointer;
 }
 
-/* social icons */
+/* ↓ ↓ ↓ social icons ↓ ↓ ↓*/
 footer ul{
     position: absolute;
-    top: 1130px;
+    top: 1142px;
     left: 40%;
     width: 150px;
 
