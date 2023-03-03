@@ -11,6 +11,8 @@
 
     text-decoration: none;
     list-style: none;
+
+    mix-blend-mode:difference;
 }
 
 *::selection {
