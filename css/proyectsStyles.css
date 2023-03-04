@@ -11,6 +11,7 @@
 
     text-decoration: none;
     list-style: none;
+    /* mix-blend-mode: exclusion; */
 }
 
 *::selection {
@@ -60,22 +61,6 @@ nav a:hover{
   filter: blur(0px);
 }
 
-/* ↓ ↓ ↓  Proyects Text  ↓ ↓ ↓  */
-.principal{
-  position: absolute;
-  top: 180px;
-  left: 10%;
-
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 60px;
-
-  text-transform: uppercase;
-
-  background-color: transparent;
-  text-shadow: 0px 0px 10px rgba(203, 203, 203, 0.25);
-}
-
 /* ↓ ↓ ↓  Proyects Cards ↓ ↓ ↓  */
 :root {
     --bg-color: rgb(20, 20, 20);
@@ -84,8 +69,9 @@ nav a:hover{
 
 #cards {
     display: flex;
-    flex-wrap: wrap;    
-    margin-left: 10%;
+    flex-wrap: wrap;
+    margin-left: 15%;
+
     gap: 8px;  
     max-width: 916px;
     width: calc(100% - 20px);
@@ -96,9 +82,7 @@ nav a:hover{
   }
   
   .card {
-    top: 100px;
-    height: 260px;
-    background-color: aquamarine;
+    height: 260px;  
     width: 300px;
     border-radius: 10px;
 
@@ -119,7 +103,6 @@ nav a:hover{
     border-radius: inherit;
     content: "";
     height: 100%;
-    left: 0px;
     opacity: 0;
     position: absolute;
     top: 0px;
@@ -179,11 +162,13 @@ nav a:hover{
     height: 140px;
     justify-content: center;
     overflow: hidden;
+  
+    border-radius: 8px;
   }
   
   .card-image > i {
     font-size: 6em;
-    opacity: 0.25;
+    /* opacity: 0.25; */
   }
   
   .card-info-wrapper {
@@ -272,8 +257,13 @@ nav a:hover{
     }
   }
 
-/* ↓ ↓ ↓  Footer ↓ ↓ ↓ */
+/* ↓ ↓ ↓  Cards Hover ↓ ↓ ↓ */
+.digital-clock {
+  position: absolute;
+  top: 50px;
+}
 
+/* ↓ ↓ ↓  Footer ↓ ↓ ↓ */
 footer {
   width: 0px;
   height: 0px;
