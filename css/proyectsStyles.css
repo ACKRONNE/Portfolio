@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style: none;
 
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
 }
 
 *::selection {
@@ -52,7 +52,6 @@ nav a{
 
   background: none;
   font-weight: 400;
-  font-size: 17px;
 }
 
 nav:hover a{
@@ -64,6 +63,15 @@ nav a:hover{
   filter: blur(0px);
 }
 
+/* ↓ ↓ ↓  Proyects Title ↓ ↓ ↓  */
+.title {
+  position: absolute;
+  top: 180px;
+  left: 15%;
+
+  background-color: transparent;
+}
+
 /* ↓ ↓ ↓  Proyects Cards ↓ ↓ ↓  */
 :root {
     --bg-color: rgb(20, 20, 20);
@@ -71,7 +79,7 @@ nav a:hover{
 
 #cards {
     position: absolute;
-    top: 200px;
+    top: 250px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 15%;
@@ -165,6 +173,7 @@ nav a:hover{
     display: flex;
     height: 140px;
     justify-content: center;
+
     overflow: hidden;
   
     border-radius: 8px;

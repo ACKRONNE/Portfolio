@@ -11,6 +11,8 @@
 
     text-decoration: none;
     list-style: none;
+
+    mix-blend-mode:difference;
 }
 
 *::selection {
@@ -50,7 +52,6 @@ nav{
   
     background: none;
     font-weight: 400;
-    font-size: 17px;
   }
   
   nav:hover a{

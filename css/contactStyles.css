@@ -36,19 +36,21 @@ html {
 
 /* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
 nav{
-    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 10px;
 }
 
 nav ul {
     float: right;
-    margin-right: 20px;
 }
 
 nav a{
     display: inline-block;
-    margin: 60px 40px;
+    margin: 0px 40px;
 
     font-weight: 400;
+    background: none;
 
 }
 
@@ -64,14 +66,18 @@ nav a:hover{
 
 /* ↓ ↓ ↓ Form ↓ ↓ ↓*/
 .container {
+    position: absolute;
     width: 100%;
+    top: 120px;
     height: 100vh;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 form {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -83,9 +89,8 @@ form {
 
 form h1 , form h2 {
     position: absolute;
-    margin-top: 40px;
-    margin-left: -70px;
 
+    left: 25%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -96,7 +101,8 @@ form h1 , form h2 {
 
 form h1 {
     height: 60px;
-    top: 115px;
+    top: -80px;
+
 
     font-weight: 300;
     font-size: 40px;
@@ -105,7 +111,7 @@ form h1 {
 
 form h2 {
     height: 30px;
-    top: 180px;
+    top: -20px;
 
     font-weight: 300;
     font-size: 20px;
@@ -119,7 +125,7 @@ form input , form textarea {
 
     font-size: 14px;
 
-    background: #0c0c0c; /*color 1 option*/
+    background: #0c0c0c;
     /* background: linear-gradient(90deg, #0e0e0e 0%, rgba(208, 3, 3, 0) 100%); color 2 option */
     backdrop-filter: blur(2px);
 
@@ -171,10 +177,12 @@ form button:hover{
     line-height: 30px;
 }
 
-/* ↓ ↓ ↓ social contact ↓ ↓ ↓*/
+/* ↓ ↓ ↓ looking for other ways ↓ ↓ ↓*/
 .social-icons {
-    margin-left: 118px;
-    margin-top: 30px;
+    position: absolute;
+    background-color: transparent;
+    left: 118px;
+    top: 850px;
 }
 
 .social-icons svg , .social-icons h2{
@@ -202,12 +210,11 @@ form button:hover{
     left: 260px;
     font-size: 13px;
     width: 70px;
-    top: -10px;
+    top: 850px;
 
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
-    
 
     transform: translate(-50%,-20px);
 }
@@ -217,6 +224,8 @@ form button:hover{
     font-weight: 300;
     text-align: center;
     padding: 0px;
+
+    text-shadow: 0px 0px 20px rgba(253, 253, 253, 0.328);
 }
 
 .popup.active {
