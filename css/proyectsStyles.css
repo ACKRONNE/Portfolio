@@ -11,7 +11,8 @@
 
     text-decoration: none;
     list-style: none;
-    /* mix-blend-mode: exclusion; */
+
+    mix-blend-mode: exclusion;
 }
 
 *::selection {
@@ -36,18 +37,20 @@ html {
 
 /* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
 nav{
-  width: 100%;    
+  position: absolute;
+  top: 60px;
+  right: 10px;
 }
 
 nav ul {
   float: right;
-  margin-right: 20px;
 }
 
 nav a{
   display: inline-block;
-  margin: 60px 40px;
+  margin: 0px 40px;
 
+  background: none;
   font-weight: 400;
   font-size: 17px;
 }
@@ -64,10 +67,11 @@ nav a:hover{
 /* ↓ ↓ ↓  Proyects Cards ↓ ↓ ↓  */
 :root {
     --bg-color: rgb(20, 20, 20);
-    --card-color: rgb(23, 23, 23);
   }
 
 #cards {
+    position: absolute;
+    top: 200px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 15%;
@@ -113,7 +117,7 @@ nav a:hover{
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06),
+      rgba(145, 145, 145, 0.098),
       transparent 
     );
     z-index: 3; 
@@ -256,13 +260,7 @@ nav a:hover{
       width: 100%;
     }
   }
-
-/* ↓ ↓ ↓  Cards Hover ↓ ↓ ↓ */
-.digital-clock {
-  position: absolute;
-  top: 50px;
-}
-
+  
 /* ↓ ↓ ↓  Footer ↓ ↓ ↓ */
 footer {
   width: 0px;

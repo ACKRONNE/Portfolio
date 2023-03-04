@@ -18,7 +18,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//Card effects
+//Card effect
 const handleOnMouseMove = e => {
     const{ currentTarget: target } = e;
 
