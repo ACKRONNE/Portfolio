@@ -33,3 +33,10 @@ const handleOnMouseMove = e => {
 for(const card of document.querySelectorAll(".card")){
     card.onmousemove = e => handleOnMouseMove(e);
 }
+
+//Cursor
+// const cursor = document.querySelector('.cursor');
+// document.addEventListener('mousemove', (e) => {
+//   cursor.style.left = e.pageX + 'px';
+//   cursor.style.top = e.pageY + 'px';
+// });
