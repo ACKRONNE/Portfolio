@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    background: #060600;
+    
+    background: #101010;
     color: #FFFFFF;
 
     font-family: 'Poppins';
@@ -42,21 +43,60 @@
 }
 
 .lan:hover a {
-    text-shadow: 0px -2px red,
-                 0px 2px cyan,
-                 -2px 0px red,
-                 2px 0px cyan;
+    filter: blur(1px);
 }
 
-.lan a::before {
+.lan a::before{
+    position: absolute;
+    height: 0px;
+    margin-left: 0px;
     content: attr(data-text);
-    position: relative;
-    left: 18.7px;
+    visibility: hidden;
+}
+.lan a::after{
+    position: absolute;
+    margin-left: -18px;
+    content: attr(data-text);
+    visibility: hidden;
 }
 
- .lan:hover a::before {
-    animation: animate 5ms ease-in-out infinite;
+.lan:hover a::before,
+.lan:hover a::after {
+    visibility: visible;
+    font-weight: 100;
+} 
+
+.lan:hover a::before {
+    color: rgba(255, 0, 188,.9);
+    animation: glitch .3s cubic-bezier(.25,.46,.45,.94) both infinite;   
 }
+
+.lan:hover a::after {
+    color: rgba(0,255,255,.8);
+    animation: glitch .3s cubic-bezier(.25,.46,.45,.94) reverse both infinite;   
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px , 3px);
+    }
+    40% {
+        transform: translate(-3px , -3px);
+    }
+    60% {
+        transform: translate(3px , 3px);
+    }
+    80% {
+        transform: translate(3px , -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
 
 /* AMPARO OBANDO */
 h1 {

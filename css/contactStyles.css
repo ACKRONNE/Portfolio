@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
-    background: #060600;
+    background: #101010;
     color: #FFFFFF;
 
     font-family: 'Poppins';
@@ -125,8 +125,7 @@ form input , form textarea {
 
     font-size: 14px;
 
-    background: #0c0c0c;
-    /* background: linear-gradient(90deg, #0e0e0e 0%, rgba(208, 3, 3, 0) 100%); color 2 option */
+    background: #151515;
     backdrop-filter: blur(2px);
 
     border-radius: 10px;
@@ -258,12 +257,12 @@ form button:hover{
 /* ↓ ↓ ↓ Footer ↓ ↓ ↓*/
 .footer-line {
     position: absolute;
-    width: calc(100% - 10%);
-    height: 1px;
-    left: calc(100% - 95.4%);
     top:  1136px;
+    height: 1px;
+    width: calc(100% - 10%);
+    left: calc(100% - 95.4%);
 
-    opacity: .5;
+    opacity: .1;
     background-color: #FFFFFF;
 }
 
