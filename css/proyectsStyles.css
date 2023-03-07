@@ -41,7 +41,7 @@ nav a:hover ~ .cursor {
   transform: scale(20);
 } */
 
-/* ↓ ↓ ↓  Top-Logo.png  ↓ ↓ ↓ */
+/*  Top-Logo.png  */
 .logo {
     position: absolute;
     width: 70px;
@@ -52,7 +52,7 @@ nav a:hover ~ .cursor {
     background: url(images/Top-Logo.png);    
 }
 
-/* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
+/*  Exploration Zone */
 nav{
   position: absolute;
   top: 60px;
@@ -81,7 +81,7 @@ nav a:hover{
   filter: blur(0px);
 }
 
-/* ↓ ↓ ↓  Proyects Title ↓ ↓ ↓  */
+/*  Proyects Title */
 .title {
   position: absolute;
   top: 180px;
@@ -97,7 +97,7 @@ nav a:hover{
   background-color: transparent;
 }
 
-/* ↓ ↓ ↓  Proyects Cards ↓ ↓ ↓  */
+/*  Proyects Cards  */
 #cards {
     position: absolute;
     top: 250px;
@@ -178,7 +178,7 @@ nav a:hover{
     z-index: 2; 
   }
   
-  /* ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ */
+  /* extra card content styles */
   
   h1, h2, h3, h4, span {
     color: rgb(240, 240, 240);
@@ -237,7 +237,7 @@ nav a:hover{
     margin-top: 8px;
   }
   
-  /* ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ */
+  /* some responsiveness */
   @media(max-width: 1000px) {
     body {
       align-items: flex-start;  
@@ -292,7 +292,7 @@ nav a:hover{
     }
   }
   
-/* ↓ ↓ ↓  Footer ↓ ↓ ↓ */
+/*  Footer  */
 footer {
   width: 0px;
   height: 0px;

@@ -116,6 +116,7 @@ nav{
     line-height: 26px;
     justify-content: center;
     text-align: justify;    
+    background: none;
 }
 
  /* Download CV */
@@ -123,35 +124,126 @@ nav{
     position: absolute;
     top: 500px;
     left: 40%;
+    background: none;
  }
 
  .download-button h4 {
     font-weight: 100;
+    opacity: .4;
+    background: none;
+    margin-top: 20px;
  }
 
- .download-button a{
+/* button effect  */
+@property --d{
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+.download-button a{
     position: relative;
-    top: 20px;
+    top: 50px;
     left: 20%;
     padding: 8px;
 
     font-weight: 400;
-
-    border-radius: 10px;
-    background: rgba(52, 52, 52, 0.3);
-    backdrop-filter: blur(14.5px);
+    opacity: .8;
  }
 
- .download-button a:hover {
-    transition: .25s;
-    filter: drop-shadow(0 0 5px #ffffff) 
-            drop-shadow(0 0 10px #807e7e);
+.button {
+    position: relative;
+    aspect-ratio: 1;
+    font-size: 14px;
+    color: #fff;
+    width: 200px;
+
+    border-radius: 10px; 
+    transition: .3s;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 0;
+}
+
+.button:before {
+    position: absolute;
+    content: "";
+    inset: -8px;
+    padding: 2px;
+
+    border-radius: 10px; 
+
+    background: conic-gradient(from var(--d,0deg),
+          #FF1808 ,
+          #0000 30deg 120deg,
+          #730C38 150deg 180deg,
+          #0000 210deg 300deg,
+          #FF1808 330deg
+      );
+
+      -webkit-mask:
+          linear-gradient(#000 0 0) content-box,
+          linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: intersect
+}
+
+.button:after {
+      position: absolute;
+      content: "";
+      inset: -20px;
+
+      background:
+          radial-gradient(20px at left  30px top    10px,#FF1808 98%,#0000),
+          radial-gradient(20px at right 30px bottom 10px,#730C38 98%,#0000);
+      filter: blur(60px);
+      opacity: .5;
+      }
+  
+.button:before, .button:after {
+transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
+}
+    
+.button:hover:after {
+      transform: rotate(3600deg);
+      transition: .5s,60s linear transform;
+}
+
+.button:hover:before {
+      --d: 3600deg;
+      transition: .5s,60s linear --d;
+}
+
+.button:hover:before {
+      background-color: #222;
+ }
+
+ .if {
+    font-size: 18px;
+    font-size: 400;
+    color: #FF1808;
+    background: none;
+
+    filter: drop-shadow(0 0 2px #FF1808) 
+            drop-shadow(0 0 4px #FF00E8);
+ }
+
+ .ac{
+    font-size: 18px;
+    font-size: 400;
+    color: #FF8A00;
+    background: none;
+
+    filter: drop-shadow(0 0 2px #FF8A00) 
+            drop-shadow(0 0 4px #FF1808);
  }
 
  /* Skills */
 .skills h1{
     position: absolute;
-    top: 600px;
+    top: 690px;
     left: 66px;
     width: 100px;
 

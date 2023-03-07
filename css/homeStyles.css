@@ -33,6 +33,17 @@
 
 /* Active */
 
+#en-active ~ .en {
+    visibility: visible;
+}
+#en-active ~ .en {
+    visibility: visible;
+}
+
+.es {
+    visibility: hidden;
+}
+
 
 /* Language */
 .lan{
@@ -62,7 +73,7 @@
     transition: .8s;            
     opacity: 1;
 }
- 
+
 /* AMPARO OBANDO */
 h1 {
     position: absolute;
@@ -169,7 +180,7 @@ h1 {
     border-radius: 20px;
 }
 
-/* Spanish zone */
+/* ↓ ↓ ↓ Spanish zone ↓ ↓ ↓ */
 .es h2 {
     position: absolute;
     width: 475px;
@@ -182,54 +193,48 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;   
-
-    visibility: hidden;
 }
 
 .es .exp{
     position: absolute;
-    left:1090px;
-    top: 20px;
-    
+    left: 85%;
+    top: -50px;
+
     display: flex;
     text-align: right;
+    text-shadow: 0px 0px 4px #000000;
     background-color: transparent;
+}
 
-    visibility: hidden;
+.es .exp ul {
+    width: 0px;
 }
 
 .es .exp li {
     position: relative;
-    height: 100px;
+    display: flex;    
+    
+    width: 90px;
+    justify-content: right;
+    text-align: left;
     
     letter-spacing: 0.080em;
     font-weight: 300;
     font-size: 16px;
-    margin-top: 80px;
+    margin-top:170px;
 
     transform: rotate(90deg);
 }
-
+.es ul li a {
+    background: none;
+}
+.es ul:hover li a {
+    filter: blur(5px);
+    transition: 1s;
+}
 .es ul li:hover a {
-    text-shadow: 0px -2px red,
-                 0px 2px cyan,
-                 -2px 0px red,
-                 2px 0px cyan;
-}
-
-.es li a::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0px;
-    left: 13px;
-
-    width: 90px;
-    display: flex;
-    justify-content: right;
-    
-    color: white;
-}
-
-.es li:hover a::before {
-    animation: animate 5ms ease-in-out infinite;
+    filter: blur(0px);
+    transform: rotate(-90deg);
+    filter: drop-shadow(0 0 5px #ffffff7e) 
+            drop-shadow(0 0 10px #807e7e);
 }
