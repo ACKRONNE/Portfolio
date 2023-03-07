@@ -39,24 +39,25 @@ html {
 nav{
     position: absolute;
     top: 60px;
-    right: 10px;
+    left: 65%;
   }
   
   nav ul {
     float: right;
+    display: flex;
+    width: 0;
   }
   
   nav a{
-    display: inline-block;
+    display: flex;
     margin: 0px 40px;
-  
-    background: none;
     font-weight: 400;
+    background: none;
   }
   
   nav:hover a{
     filter: blur(5px);
-    transition: .2s;
+    transition: 1s;
   }
   
   nav a:hover{
@@ -83,8 +84,8 @@ nav{
     line-height: 40px;
     background-color: transparent;
     
-    filter: drop-shadow(0 0 10px #ffffff) 
-            drop-shadow(0 0 30px #807e7e);
+    filter: drop-shadow(0 0 5px #ffffff) 
+            drop-shadow(0 0 10px #807e7e);
 }
 
 /* Cursor blinking */
@@ -124,6 +125,10 @@ nav{
     left: 40%;
  }
 
+ .download-button h4 {
+    font-weight: 100;
+ }
+
  .download-button a{
     position: relative;
     top: 20px;
@@ -133,7 +138,8 @@ nav{
     font-weight: 400;
 
     border-radius: 10px;
-    background: linear-gradient(270deg, rgba(255, 24, 8, 0.9) 0%, rgba(144, 21, 103, 0.731771) 49.48%, rgba(144, 21, 103, 0.731771) 49.49%, rgba(30, 17, 199, 0.56) 100%);
+    background: rgba(52, 52, 52, 0.3);
+    backdrop-filter: blur(14.5px);
  }
 
  .download-button a:hover {

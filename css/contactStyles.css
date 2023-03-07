@@ -38,31 +38,30 @@ html {
 nav{
     position: absolute;
     top: 60px;
-    right: 10px;
-}
-
-nav ul {
+    left: 65%;
+  }
+  
+  nav ul {
     float: right;
-}
-
-nav a{
-    display: inline-block;
+    display: flex;
+    width: 0;
+  }
+  
+  nav a{
+    display: flex;
     margin: 0px 40px;
-
     font-weight: 400;
     background: none;
-
-}
-
-nav:hover a{
+  }
+  
+  nav:hover a{
     filter: blur(5px);
-    transition: .2s;
-
-}
-
-nav a:hover{
+    transition: 1s;
+  }
+  
+  nav a:hover{
     filter: blur(0px);
-}
+  }
 
 /* ↓ ↓ ↓ Form ↓ ↓ ↓*/
 .container {

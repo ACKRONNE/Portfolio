@@ -11,6 +11,8 @@
 
     list-style: none;
     text-decoration: none;
+
+    /* mix-blend-mode: exclusion; */
 }
 
 *::selection {
@@ -29,6 +31,9 @@
     background: url(images/Top-Logo.png);
 }
 
+/* Active */
+
+
 /* Language */
 .lan{
     position: absolute;
@@ -42,61 +47,22 @@
     justify-content: space-between;
 }
 
-.lan:hover a {
-    /* filter: blur(1px); */
+.lan a{
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    background: none;
+    opacity: .3;
 }
 
-.lan a::before{
-    position: absolute;
-    height: 0px;
-    margin-left: 0px;
-    content: attr(data-text);
-    visibility: hidden;
+.lan a:hover{
+    background: none;
+    filter: drop-shadow(0 0 6px #ffffff) 
+            drop-shadow(0 0 11px #807e7e);
+    transition: .8s;            
+    opacity: 1;
 }
-.lan a::after{
-    position: absolute;
-    margin-left: -18px;
-    content: attr(data-text);
-    visibility: hidden;
-}
-
-.lan:hover a::before,
-.lan:hover a::after {
-    visibility: visible;
-    font-weight: 100;
-} 
-
-.lan:hover a::before {
-    color: rgba(255, 0, 188,.9);
-    animation: glitch .3s cubic-bezier(.25,.46,.45,.94) both infinite;   
-}
-
-.lan:hover a::after {
-    color: rgba(0,255,255,.8);
-    animation: glitch .3s cubic-bezier(.25,.46,.45,.94) reverse both infinite;   
-}
-
-@keyframes glitch {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(-3px , 3px);
-    }
-    40% {
-        transform: translate(-3px , -3px);
-    }
-    60% {
-        transform: translate(3px , 3px);
-    }
-    80% {
-        transform: translate(3px , -3px);
-    }
-    100% {
-        transform: translate(0);
-    }
-}
-
+ 
 /* AMPARO OBANDO */
 h1 {
     position: absolute;
@@ -131,82 +97,48 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;   
+
+    background: none;
 }
 
 /* Exploration zone */
 .en .exp{
     position: absolute;
-    left:1090px;
-    top: 20px;
+    left: 85%;
+    top: -40px;
+
     display: flex;
     text-align: right;
     background-color: transparent;
 }
 
+.en .exp ul {
+    width: 0px;
+}
+
 .en .exp li {
     position: relative;
-    height: 100px;
+    display: flex;    
+    
+    width: 80px;
+    justify-content: right;
+    text-align: left;
     
     letter-spacing: 0.080em;
     font-weight: 300;
     font-size: 16px;
-    margin-top: 80px;
+    margin-top:170px;
 
     transform: rotate(90deg);
 }
 
+.en ul:hover li a {
+    filter: blur(5px);
+    transition: 1s;
+}
 .en ul li:hover a {
-    text-shadow: 0px -2px red,
-                 0px 2px cyan,
-                 -2px 0px red,
-                 2px 0px cyan;
+    filter: blur(0px);
 }
-
-.en ul li a::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 88px;
-    display: flex;
-    justify-content: right;
-    
-    color: white;
-}
-
-.en ul li:hover a::before {
-    animation: animate 5ms ease-in-out infinite;
-}
-
-@keyframes animate {
-    0%, 100% {
-        top: -7px;
-        left: 0;
-        opacity: 0.5;
-    }
-    20% {
-        top: 0px;
-        left: -10;
-        opacity: 0.7;
-    }
-    40% {
-        top: 7px;
-        left: 0;
-        opacity: 0.2;
-    }
-    60% {
-        top: 0px;
-        left: 10px;
-        opacity: 0.3;
-    }
-    0%,100% {
-        top: 0;
-        left: 0;
-        opacity: 0.9;
-    }
-}
-
 
 /* Game Zone */
 .material-symbols-rounded { /* play button */
@@ -217,7 +149,7 @@ h1 {
     top: 404px;        
 }
 
- .game {             /*Square*/
+.game {             /*Square*/
     position: absolute;
     width: 450px;   /*Ancho*/
     height: 220px;  /*Largo*/
