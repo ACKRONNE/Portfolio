@@ -43,7 +43,7 @@
 }
 
 .lan:hover a {
-    filter: blur(1px);
+    /* filter: blur(1px); */
 }
 
 .lan a::before{
@@ -97,7 +97,6 @@
     }
 }
 
-
 /* AMPARO OBANDO */
 h1 {
     position: absolute;
@@ -120,7 +119,7 @@ h1 {
 }
 
 /* SOFTWARE ENGINEER, BACK END & CLOUD DEVELOPER. */
-h2 {
+.en h2 {
     position: absolute;
     width: 475px;
     height: 26px;
@@ -135,7 +134,7 @@ h2 {
 }
 
 /* Exploration zone */
-.exp{
+.en .exp{
     position: absolute;
     left:1090px;
     top: 20px;
@@ -144,7 +143,7 @@ h2 {
     background-color: transparent;
 }
 
-.exp li {
+.en .exp li {
     position: relative;
     height: 100px;
     
@@ -156,14 +155,14 @@ h2 {
     transform: rotate(90deg);
 }
 
-ul li:hover a {
+.en ul li:hover a {
     text-shadow: 0px -2px red,
                  0px 2px cyan,
                  -2px 0px red,
                  2px 0px cyan;
 }
 
-ul li a::before {
+.en ul li a::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -176,7 +175,7 @@ ul li a::before {
     color: white;
 }
 
-ul li:hover a::before {
+.en ul li:hover a::before {
     animation: animate 5ms ease-in-out infinite;
 }
 
@@ -230,4 +229,69 @@ ul li:hover a::before {
     backdrop-filter: blur(0px);
     
     border-radius: 20px;
+}
+
+/* Spanish zone */
+.es h2 {
+    position: absolute;
+    width: 475px;
+    height: 26px;
+    left: 50px;
+    top: 590px;
+    
+    font-family: 'Yantramanav';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;   
+
+    visibility: hidden;
+}
+
+.es .exp{
+    position: absolute;
+    left:1090px;
+    top: 20px;
+    
+    display: flex;
+    text-align: right;
+    background-color: transparent;
+
+    visibility: hidden;
+}
+
+.es .exp li {
+    position: relative;
+    height: 100px;
+    
+    letter-spacing: 0.080em;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 80px;
+
+    transform: rotate(90deg);
+}
+
+.es ul li:hover a {
+    text-shadow: 0px -2px red,
+                 0px 2px cyan,
+                 -2px 0px red,
+                 2px 0px cyan;
+}
+
+.es li a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: 13px;
+
+    width: 90px;
+    display: flex;
+    justify-content: right;
+    
+    color: white;
+}
+
+.es li:hover a::before {
+    animation: animate 5ms ease-in-out infinite;
 }
