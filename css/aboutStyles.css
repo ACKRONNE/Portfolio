@@ -35,7 +35,7 @@ html {
     background: url(images/Top-Logo.png);    
 }
 
-/* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
+/*  Exploration Zone */
 nav{
     position: absolute;
     top: 60px;
@@ -84,7 +84,7 @@ nav{
     line-height: 40px;
     background-color: transparent;
     
-    filter: drop-shadow(0 0 5px #ffffff) 
+    filter: drop-shadow(0 0 5px #ffffff7e) 
             drop-shadow(0 0 10px #807e7e);
 }
 
@@ -168,8 +168,8 @@ nav{
 
     background: none;
     
-    filter: drop-shadow(0 0 10px #ffffff) 
-            drop-shadow(0 0 30px #807e7e);
+    filter: drop-shadow(0 0 5px #ffffff7e) 
+            drop-shadow(0 0 10px #807e7e);
 }
 
 /* Footer */

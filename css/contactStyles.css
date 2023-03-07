@@ -24,7 +24,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ↓ ↓ ↓ Top-Logo.png ↓ ↓ ↓*/
+/*  Top-Logo.png */
 .logo {
     position: absolute;    
     height: 42px;
@@ -34,7 +34,7 @@ html {
     background: url(images/Top-Logo.png);    
 }
 
-/* ↓ ↓ ↓ Exploration Zone ↓ ↓ ↓*/
+/*  Exploration Zone */
 nav{
     position: absolute;
     top: 60px;
@@ -63,7 +63,7 @@ nav{
     filter: blur(0px);
   }
 
-/* ↓ ↓ ↓ Form ↓ ↓ ↓*/
+/* Form */
 .container {
     position: absolute;
     width: 100%;
@@ -94,7 +94,8 @@ form h1 , form h2 {
     display: flex;
     justify-content: center;
 
-    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0 0 3px #ffffff7e) 
+            drop-shadow(0 0 7px #807e7e);
     background-color: transparent;
 }
 
@@ -175,7 +176,7 @@ form button:hover{
     line-height: 30px;
 }
 
-/* ↓ ↓ ↓ looking for other ways ↓ ↓ ↓*/
+/* looking for other ways */
 .social-icons {
     position: absolute;
     background-color: transparent;
@@ -191,14 +192,21 @@ form button:hover{
 
     margin: 20px 8px 0px 0px;
     height: 35px;
-    
+
+    background: none;
 }
 
-.social-icons li h2 {
+.social-icons h2 {
     cursor: pointer;
 }
 
-/* ↓ ↓ ↓ Copied notification ↓ ↓ ↓ */
+.social-icons h2:hover {
+    transition: .5s;
+    filter: drop-shadow(0 0 0.5px #ffffff) 
+            drop-shadow(0 0 2px #807e7e);
+}
+
+/*  Copied notification  */
 .content {
     position: relative;
 }
@@ -219,11 +227,9 @@ form button:hover{
 
 .popup h4 {
     background-color: transparent;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
     padding: 0px;
-
-    text-shadow: 0px 0px 5px rgba(253, 253, 253, 0.328);
 }
 
 .popup.active {
@@ -253,7 +259,7 @@ form button:hover{
     }
 }
 
-/* ↓ ↓ ↓ Footer ↓ ↓ ↓*/
+/* Footer */
 .footer-line {
     position: absolute;
     top:  1136px;
@@ -265,7 +271,7 @@ form button:hover{
     background-color: #FFFFFF;
 }
 
-/* ↓ ↓ ↓ logo ↓ ↓ ↓*/
+/*  logo */
 .img{
     position: absolute;    
     width: 55px;
@@ -276,7 +282,7 @@ form button:hover{
     background: url("images\Footer-logo.png") no-repeat;
 }
 
-/* ↓ ↓ ↓ copyright text ↓ ↓ ↓*/
+/* Copyright text */
 footer h4{
     position: absolute;
     top: 1149px;
@@ -288,7 +294,7 @@ footer h4{
     left: calc(100% - 25%);
 }
 
-/* ↓ ↓ ↓ back to top ↓ ↓ ↓*/
+/* Back to top */
 .top-txt {
     position: absolute;
     top: 1149px;
@@ -298,7 +304,7 @@ footer h4{
     cursor: pointer;
 }
 
-/* ↓ ↓ ↓ social icons ↓ ↓ ↓*/
+/* social icons */
 footer ul{
     position: absolute;
     top: 1142px;

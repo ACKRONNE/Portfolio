@@ -91,7 +91,7 @@ nav a:hover{
   font-size: 30px;
   line-height: 60px;
 
-  filter: drop-shadow(0 0 5px #ffffff) 
+  filter: drop-shadow(0 0 5px #ffffff7e) 
           drop-shadow(0 0 10px #807e7e);
 
   background-color: transparent;
