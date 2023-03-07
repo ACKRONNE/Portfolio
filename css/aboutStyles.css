@@ -66,7 +66,7 @@ nav{
 /* Hello World */
 .principal h1 {
     position: absolute;
-    width: 207px;
+    width: 210px;
     left: 66px;
     top: 198px;
 
@@ -75,14 +75,12 @@ nav{
     white-space: nowrap;
     overflow: hidden;
 
-    animation: typing 2s steps(12),
+    animation: typing 3.2s steps(12),
                cursor .4s step-end infinite alternate;
-    
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 35px;
-    line-height: 60px;
+    line-height: 40px;
     background-color: transparent;
     
     filter: drop-shadow(0 0 10px #ffffff) 
@@ -117,6 +115,55 @@ nav{
     line-height: 26px;
     justify-content: center;
     text-align: justify;    
+}
+
+ /* Download CV */
+ .download-button {
+    position: absolute;
+    top: 500px;
+    left: 40%;
+ }
+
+ .download-button a{
+    position: relative;
+    top: 20px;
+    left: 20%;
+    padding: 8px;
+
+    font-weight: 400;
+
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(255, 24, 8, 0.9) 0%, rgba(144, 21, 103, 0.731771) 49.48%, rgba(144, 21, 103, 0.731771) 49.49%, rgba(30, 17, 199, 0.56) 100%);
+ }
+
+ .download-button a:hover {
+    transition: .25s;
+    filter: drop-shadow(0 0 5px #ffffff) 
+            drop-shadow(0 0 10px #807e7e);
+ }
+
+ /* Skills */
+.skills h1{
+    position: absolute;
+    top: 600px;
+    left: 66px;
+    width: 100px;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: typing 2s steps(6),
+               cursor .4s step-end infinite alternate;
+
+    background: none;
+    
+    filter: drop-shadow(0 0 10px #ffffff) 
+            drop-shadow(0 0 30px #807e7e);
 }
 
 /* Footer */
