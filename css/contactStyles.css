@@ -56,7 +56,7 @@ nav{
   
   nav:hover a{
     filter: blur(5px);
-    transition: 1s;
+    transition: 0.5s;
   }
   
   nav a:hover{
@@ -201,7 +201,6 @@ form button:hover{
 }
 
 .social-icons h2:hover {
-    transition: .5s;
     filter: drop-shadow(0 0 0.5px #ffffff) 
             drop-shadow(0 0 2px #807e7e);
 }

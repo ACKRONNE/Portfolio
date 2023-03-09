@@ -11,8 +11,8 @@
 
     text-decoration: none;
     list-style: none;
-
-    /* mix-blend-mode:difference; */
+    /* cursor: none; */
+    mix-blend-mode:difference;
 }
 
 *::selection {
@@ -23,6 +23,26 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* .cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: 0.05s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+  
+nav:hover a > .cursor {
+    transform: scale(20);
+}
+  
+nav a:hover > .cursor {
+    transform: scale(20);
+} */
 
 /* Top-Logo.png */
 .logo {
@@ -42,8 +62,7 @@ nav{
     left: 65%;
   }
   
-  nav ul {
-    float: right;
+  nav ul {    
     display: flex;
     width: 0;
   }
@@ -57,7 +76,7 @@ nav{
   
   nav:hover a{
     filter: blur(5px);
-    transition: 1s;
+    transition: 0.5s;
   }
   
   nav a:hover{

@@ -26,7 +26,7 @@ html {
 
 /* ↓ ↓ ↓  Cursor  ↓ ↓ ↓
 .cursor {
-  position: fixed;
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -74,7 +74,7 @@ nav a{
 
 nav:hover a{
   filter: blur(5px);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 nav a:hover{
