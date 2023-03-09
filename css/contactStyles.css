@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style: none;
 
-    /* mix-blend-mode:difference; */
+    mix-blend-mode:difference;
 }
 
 *::selection {
@@ -35,20 +35,18 @@ html {
 }
 
 /*  Exploration Zone */
-nav{
+nav {
     position: absolute;
     top: 60px;
     left: 65%;
   }
-  
-  nav ul {
-    float: right;
-    display: flex;
-    width: 0;
+
+  nav li {
+	display: inline-flex;
+    background: none;
   }
   
   nav a{
-    display: flex;
     margin: 0px 40px;
     font-weight: 400;
     background: none;
