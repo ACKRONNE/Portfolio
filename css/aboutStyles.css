@@ -241,7 +241,12 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
  }
 
  /* Skills */
-.skills h1{
+.skills div{
+    position: absolute;
+    top: 200px;
+    
+}
+.skills h2{
     position: absolute;
     top: 690px;
     left: 66px;
@@ -263,6 +268,9 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
     filter: drop-shadow(0 0 5px #ffffff7e) 
             drop-shadow(0 0 10px #807e7e);
 }
+
+/* Learning */
+
 
 /* Footer */
 .footer-line {
