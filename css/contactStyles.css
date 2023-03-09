@@ -12,7 +12,8 @@
     text-decoration: none;
     list-style: none;
 
-    mix-blend-mode:difference;
+    scroll-behavior: smooth;
+    /* mix-blend-mode:difference; */
 }
 
 *::selection {
@@ -20,8 +21,16 @@
     color: black;
 }
 
-html {
-    scroll-behavior: smooth;
+*::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3a3a3b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 
 /*  Top-Logo.png */
@@ -87,7 +96,7 @@ form {
 form h1 , form h2 {
     position: absolute;
 
-    left: 25%;
+    left: 0%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -99,8 +108,8 @@ form h1 , form h2 {
 
 form h1 {
     height: 60px;
+    width: 100%;
     top: -80px;
-
 
     font-weight: 300;
     font-size: 40px;
@@ -109,6 +118,7 @@ form h1 {
 
 form h2 {
     height: 30px;
+    width: 100%;
     top: -20px;
 
     font-weight: 300;

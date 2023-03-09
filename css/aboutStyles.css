@@ -11,8 +11,10 @@
 
     text-decoration: none;
     list-style: none;
+
+    scroll-behavior: smooth;
     /* cursor: none; */
-    mix-blend-mode:difference;
+    /* mix-blend-mode:difference; */
 }
 
 *::selection {
@@ -20,8 +22,16 @@
     color: black;
 }
 
-html {
-    scroll-behavior: smooth;
+*::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3a3a3b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 
 /* .cursor {
@@ -36,12 +46,8 @@ html {
     mix-blend-mode: difference;
 }
   
-nav:hover a > .cursor {
-    transform: scale(20);
-}
-  
-nav a:hover > .cursor {
-    transform: scale(20);
+.principal h1:hover ~ .cursor {
+    transform: scale(6);
 } */
 
 /* Top-Logo.png */
@@ -221,23 +227,24 @@ nav a:hover > .cursor {
       }
   
 .button:before, .button:after {
-transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
+transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 }
     
 .button:hover:after {
       transform: rotate(3600deg);
-      transition: .5s,60s linear transform;
+      transition: .1s,20s linear transform;
 }
 
 .button:hover:before {
       --d: 3600deg;
-      transition: .5s,60s linear --d;
+      transition: .1s,20s linear --d;
 }
 
 .button:hover:before {
       background-color: #222;
  }
 
+/* Text if you want more details */
  .if {
     font-size: 18px;
     font-size: 400;
@@ -303,6 +310,7 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 .languages h4 {
     font-weight: 100;
+    background: none;
 }
 
 /* web  */
@@ -326,6 +334,7 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 .web h4 {
     font-weight: 100;
+    background: none;
 }
 
 /* data base */
@@ -349,6 +358,7 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 .data-base h4 {
     font-weight: 100;
+    background: none;
 }
 
 /* Frameworks */
@@ -372,6 +382,7 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 .frameworks h4 {
     font-weight: 100;
+    background: none;
 }
 
 /* tools */
@@ -395,6 +406,7 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 .tools h4 {
     font-weight: 100;
+    background: none;
 }
 
 /* Learning */

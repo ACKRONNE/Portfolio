@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style: none;
 
+    scroll-behavior: smooth;
     /* mix-blend-mode: exclusion; */
 }
 
@@ -20,8 +21,16 @@
     color: black;
 }
 
-html {
-    scroll-behavior: smooth;
+*::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #3a3a3b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #fff;
 }
 
 /* ↓ ↓ ↓  Cursor  ↓ ↓ ↓
