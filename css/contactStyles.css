@@ -191,7 +191,7 @@ form button:hover{
     font-size: 16px;
 
     margin: 20px 8px 0px 0px;
-    height: 35px;
+    height: 30px;
 
     background: none;
 }
@@ -260,44 +260,55 @@ form button:hover{
 }
 
 /* Footer */
-.footer-line {
+footer {
     position: absolute;
-    top:  1136px;
-    height: 1px;
-    width: calc(100% - 10%);
-    left: calc(100% - 95.4%);
-
-    opacity: .1;
-    background-color: #FFFFFF;
+    width: 100%;
+    top: 1080px;
+    background: none;
 }
 
-/*  logo */
+.footer-line {
+    position: relative;
+    height: 1px;
+    width: 90%;
+    left: calc(100% - 95.4%);
+
+    opacity: .2;
+    background: #FFFFFF;
+}
+
+/* logo */
 .img{
-    position: absolute;    
+    position: relative;
     width: 55px;
     height: 35px;
-    top: 1143px;
+    top: 6px;
     left: calc(100% - 95.4%);
     
     background: url("images\Footer-logo.png") no-repeat;
 }
 
-/* Copyright text */
+/* copyright text */
 footer h4{
-    position: absolute;
-    top: 1149px;
+    position: relative;
     width: 150px;
+    height: 0px;
+    top: 13px;
 
     font-weight: 300;
     font-size: 12px;
 
     left: calc(100% - 25%);
+    background: none;
 }
 
-/* Back to top */
+/* back to top */
 .top-txt {
-    position: absolute;
-    top: 1149px;
+    position: relative;
+    width: 80px;
+    height: 0px;
+    top: 12px;
+
     font-size: 12px;
     left: calc(100% - 11.4%);
 
@@ -306,19 +317,20 @@ footer h4{
 
 /* social icons */
 footer ul{
-    position: absolute;
-    top: 1142px;
-    left: 40%;
+    position: relative;
+    top: 5px;
+    height: 0px;
+    left: 44%;
     width: 150px;
 
     background-color: transparent;
-    /* background-color: aquamarine; */
 }
 
+/* icons list */
 footer li{
-    position: relative;
     display: inline;
     margin-left: 10px;
+    height: 0px;
 }
 
 .icons8-github { 

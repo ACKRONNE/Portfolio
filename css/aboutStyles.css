@@ -68,7 +68,7 @@ nav{
 .principal h1 {
     position: absolute;
     width: 210px;
-    left: 66px;
+    left: 5%;
     top: 198px;
 
     /* Animation configurations */
@@ -241,11 +241,6 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
  }
 
  /* Skills */
-.skills div{
-    position: absolute;
-    top: 200px;
-    
-}
 .skills h2{
     position: absolute;
     top: 690px;
@@ -268,28 +263,220 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
     filter: drop-shadow(0 0 5px #ffffff7e) 
             drop-shadow(0 0 10px #807e7e);
 }
+/* Laguages  */
+.languages h3 {
+    position: absolute;
+    top: 780px;
+    left: 9%;
+
+    font-weight: 100;
+
+    background: none;
+}
+
+.languages ul {
+    position: absolute;
+    display: flexbox;
+    top: 815px;
+    left: 9%;
+
+    background: none;
+}
+
+.languages h4 {
+    font-weight: 100;
+}
+
+/* web  */
+.web h3{
+    position: absolute;
+    top: 780px;
+    left: 21%;
+
+    font-weight: 100;
+
+    background: none;    
+}
+
+.web ul {
+    position: absolute;
+    top: 815px;
+    left: 21%;
+
+    background: none;
+}
+
+.web h4 {
+    font-weight: 100;
+}
+
+/* data base */
+.data-base h3{
+    position: absolute;
+    top: 780px;
+    left: 31%;
+
+    font-weight: 100;
+
+    background: none;    
+}
+
+.data-base ul {
+    position: absolute;
+    top: 815px;
+    left: 31%;
+
+    background: none;
+}
+
+.data-base h4 {
+    font-weight: 100;
+}
+
+/* Frameworks */
+.frameworks h3{
+    position: absolute;
+    top: 780px;
+    left: 41%;
+
+    font-weight: 100;
+
+    background: none;    
+}
+
+.frameworks ul {
+    position: absolute;
+    top: 815px;
+    left: 41%;
+
+    background: none;
+}
+
+.frameworks h4 {
+    font-weight: 100;
+}
+
+/* tools */
+.tools h3{
+    position: absolute;
+    top: 780px;
+    left: 51%;
+
+    font-weight: 100;
+
+    background: none;    
+}
+
+.tools ul {
+    position: absolute;
+    top: 815px;
+    left: 51%;
+
+    background: none;
+}
+
+.tools h4 {
+    font-weight: 100;
+}
 
 /* Learning */
+.learning h2 {
+    position: absolute;
+    top: 1090px;
+    left: 66px;
+    width: 175px;
 
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: typing 2s steps(8),
+               cursor .4s step-end infinite alternate;
+
+    background: none;
+    
+    filter: drop-shadow(0 0 5px #ffffff7e) 
+            drop-shadow(0 0 10px #807e7e);    
+}
+
+/* AWS */
+.aws h3 {
+    position: absolute;
+    top: 1150px;
+    left: 9%;
+
+    font-weight: 300;
+
+    background: none;
+}
+
+.aws ul {
+    position: absolute;
+    display: flexbox;
+    top: 1185px;
+    left: 9%;
+
+    background: none;
+}
+
+.aws h4 {
+    font-weight: 100;
+    background: none;
+}
+
+/* Containers */
+.containers h3 {
+    position: absolute;
+    top: 1150px;
+    left: 31%;
+
+    font-weight: 300;
+
+    background: none;
+}
+
+.containers ul {
+    position: absolute;
+    display: flexbox;
+    top: 1185px;
+    left: 31%;
+
+    background: none;
+}
+
+.containers h4 {
+    font-weight: 100;
+    background: none;
+}
 
 /* Footer */
-.footer-line {
+footer {
     position: absolute;
-    top:  1136px;
+    width: 100%;
+    top: 1355px;
+    background: none;
+}
+
+.footer-line {
+    position: relative;
     height: 1px;
-    width: calc(100% - 10%);
+    width: 90%;
     left: calc(100% - 95.4%);
 
-    opacity: .1;
-    background-color: #FFFFFF;
+    opacity: .2;
+    background: #FFFFFF;
 }
 
 /* logo */
 .img{
-    position: absolute;    
+    position: relative;
     width: 55px;
     height: 35px;
-    top: 1143px;
+    top: 6px;
     left: calc(100% - 95.4%);
     
     background: url("images\Footer-logo.png") no-repeat;
@@ -297,20 +484,25 @@ transition:.5s, 99999s 99999s transform, 99999s 99999s --d;
 
 /* copyright text */
 footer h4{
-    position: absolute;
-    top: 1149px;
+    position: relative;
     width: 150px;
+    height: 0px;
+    top: 13px;
 
     font-weight: 300;
     font-size: 12px;
 
     left: calc(100% - 25%);
+    background: none;
 }
 
 /* back to top */
 .top-txt {
-    position: absolute;
-    top: 1149px;
+    position: relative;
+    width: 80px;
+    height: 0px;
+    top: 12px;
+
     font-size: 12px;
     left: calc(100% - 11.4%);
 
@@ -319,19 +511,20 @@ footer h4{
 
 /* social icons */
 footer ul{
-    position: absolute;
-    top: 1142px;
-    left: 40%;
+    position: relative;
+    top: 5px;
+    height: 0px;
+    left: 44%;
     width: 150px;
 
     background-color: transparent;
-    /* background-color: aquamarine; */
 }
 
+/* icons list */
 footer li{
-    position: relative;
     display: inline;
     margin-left: 10px;
+    height: 0px;
 }
 
 .icons8-github { 
