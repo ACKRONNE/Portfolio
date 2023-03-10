@@ -63,13 +63,14 @@
     letter-spacing: 0.5px;
     background: none;
     opacity: .3;
+    transition: .7s;
 }
 
 .lan a:hover{
     background: none;
     filter: drop-shadow(0 0 6px #ffffff) 
             drop-shadow(0 0 11px #807e7e);
-    transition: .8s;            
+    transition: .7s;            
     opacity: 1;
 }
 
@@ -143,6 +144,8 @@ h1 {
     transform: rotate(90deg);
 }
 .en ul li a {
+    transform: rotate(0deg);
+    transition: 0.5s;
     background: none;
 }
 .en ul:hover li a {

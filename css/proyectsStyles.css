@@ -26,10 +26,11 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #3a3a3b;
+  background: #101010;
 }
 
 *::-webkit-scrollbar-thumb {
+  border-radius: 20px;
   background: #fff;
 }
 
@@ -77,6 +78,7 @@ nav a{
   margin: 0px 40px;
   font-weight: 400;
   background: none;
+  transition: 0.5s;
 }
 
 nav:hover a{

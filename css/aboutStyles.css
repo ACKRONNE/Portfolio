@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     
     background: #101010;
     color: #FFFFFF;
@@ -27,10 +26,11 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #3a3a3b;
+    background: #101010;
 }
 
 *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
     background: #fff;
 }
 
@@ -77,6 +77,7 @@
     margin: 0px 40px;
     font-weight: 400;
     background: none;
+    transition: 0.5s;
   }
   
   nav:hover a{
@@ -288,130 +289,177 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
     filter: drop-shadow(0 0 5px #ffffff7e) 
             drop-shadow(0 0 10px #807e7e);
 }
-/* Laguages  */
-.languages h3 {
+
+/* ↓ ↓ ↓ Laguages ↓ ↓ ↓ */
+
+/* nav */
+.languages-navbar {
     position: absolute;
+    width: 7rem;
+    height: 40vh;
     top: 780px;
-    left: 9%;
+    left: 10%;
 
-    font-weight: 100;
-
-    background: none;
+    transition: width 600ms ease;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
 }
 
-.languages ul {
-    position: absolute;
-    display: flexbox;
-    top: 815px;
-    left: 9%;
-
-    background: none;
-}
-
-.languages h4 {
+/* title */
+h3 {
     font-weight: 100;
     background: none;
+
+    text-align: center;
 }
 
-/* web  */
-.web h3{
+/* ul */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #222;
+}
+
+/* li */
+.nav-item {
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #222;
+}
+
+/* Span */
+.link-text {
+    display: none;
+    margin: 0.9rem;
+    margin-left: 1rem;
+    transition: width 600ms ease;
+    background-color: transparent;
+}
+
+/* images */
+.nav-item svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    /* filter: drop-shadow(0 0 5px #ffffff7e) 
+            drop-shadow(0 0 10px #807e7e); */
+    background-color: transparent;            
+}
+
+.languages-navbar:hover {
+    width: 16rem;
+}
+
+.languages-navbar:hover .link-text {
+    display: block;
+}
+
+/* ↓ ↓ ↓ Web ↓ ↓ ↓*/
+.web-navbar {
     position: absolute;
+    width: 7rem;
+    height: 27vh;
     top: 780px;
-    left: 21%;
+    left: 20%;
 
-    font-weight: 100;
-
-    background: none;    
+    transition: width 600ms ease;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
 }
 
-.web ul {
+.web-navbar:hover {
+    width: 16rem;
+}
+
+.web-navbar:hover .link-text {
+    display: block;
+}
+
+/* ↓ ↓ ↓ Data Base ↓ ↓ ↓*/
+.db-navbar {
     position: absolute;
-    top: 815px;
-    left: 21%;
-
-    background: none;
-}
-
-.web h4 {
-    font-weight: 100;
-    background: none;
-}
-
-/* data base */
-.data-base h3{
-    position: absolute;
+    width: 7rem;
+    height: 27vh;
     top: 780px;
-    left: 31%;
+    left: 30%;
 
-    font-weight: 100;
-
-    background: none;    
+    transition: width 600ms ease;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
 }
 
-.data-base ul {
+.db-navbar:hover {
+    width: 16rem;
+}
+
+.db-navbar:hover .link-text {
+    display: block;
+}
+
+/* ↓ ↓ ↓ Frameworks ↓ ↓ ↓*/
+.frameworks-navbar {
     position: absolute;
-    top: 815px;
-    left: 31%;
-
-    background: none;
-}
-
-.data-base h4 {
-    font-weight: 100;
-    background: none;
-}
-
-/* Frameworks */
-.frameworks h3{
-    position: absolute;
+    width: 7rem;
+    height: 27vh;
     top: 780px;
-    left: 41%;
+    left: 40%;
 
-    font-weight: 100;
-
-    background: none;    
+    transition: width 600ms ease;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
 }
 
-.frameworks ul {
+.frameworks-navbar:hover {
+    width: 16rem;
+}
+
+.frameworks-navbar:hover .link-text {
+    display: block;
+}
+
+/* ↓ ↓ ↓ Tools ↓ ↓ ↓*/
+.tools-navbar {
     position: absolute;
-    top: 815px;
-    left: 41%;
-
-    background: none;
-}
-
-.frameworks h4 {
-    font-weight: 100;
-    background: none;
-}
-
-/* tools */
-.tools h3{
-    position: absolute;
+    width: 7rem;
+    height: 67vh;
     top: 780px;
-    left: 51%;
+    left: 50%;
 
-    font-weight: 100;
-
-    background: none;    
+    transition: width 600ms ease;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 1;
 }
 
-.tools ul {
-    position: absolute;
-    top: 815px;
-    left: 51%;
-
-    background: none;
+.tools-navbar:hover {
+    width: 16rem;
 }
 
-.tools h4 {
-    font-weight: 100;
-    background: none;
+.tools-navbar:hover .link-text {
+    display: block;
 }
 
 /* Learning */
-.learning h2 {
+.learning {
     position: absolute;
+    top: 302px;
+}
+.learning h2 {
+    position: relative;
     top: 1090px;
     left: 66px;
     width: 175px;
@@ -435,7 +483,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 
 /* AWS */
 .aws h3 {
-    position: absolute;
+    position: relative;
     top: 1150px;
     left: 9%;
 
@@ -445,7 +493,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 }
 
 .aws ul {
-    position: absolute;
+    position: relative;
     display: flexbox;
     top: 1185px;
     left: 9%;
@@ -460,7 +508,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 
 /* Containers */
 .containers h3 {
-    position: absolute;
+    position: relative;
     top: 1150px;
     left: 31%;
 
@@ -470,7 +518,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 }
 
 .containers ul {
-    position: absolute;
+    position: relative;
     display: flexbox;
     top: 1185px;
     left: 31%;

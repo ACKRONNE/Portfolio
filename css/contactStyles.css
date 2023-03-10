@@ -26,10 +26,11 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #3a3a3b;
+    background: #101010;
 }
 
 *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
     background: #fff;
 }
 
@@ -59,6 +60,7 @@ nav {
     margin: 0px 40px;
     font-weight: 400;
     background: none;
+    transition: 0.5s;
   }
   
   nav:hover a{
@@ -206,9 +208,11 @@ form button:hover{
 
 .social-icons h2 {
     cursor: pointer;
+    transition: .7s;
 }
 
 .social-icons h2:hover {
+    transition: .2s;
     filter: drop-shadow(0 0 0.5px #ffffff) 
             drop-shadow(0 0 2px #807e7e);
 }
