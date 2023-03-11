@@ -162,9 +162,6 @@
     margin-top: 20px;
     /* background: aquamarine; */
  }
- .download-button span {
-    /* background: none; */
- }
  .if {
     font-weight: 400;
     color: #FF1808;
@@ -364,12 +361,13 @@ h3 {
 
 /* ul */
 .nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
     background: none;
 }
@@ -594,61 +592,142 @@ h3 {
             drop-shadow(0 0 10px #807e7e);
 }
 
-/* AWS */
-.aws-navbar{ 
-    position: absolute;
-    top: 850px;
+/* ↓ ↓ ↓ AWS ↓ ↓ ↓ */
+.aws-container svg{
+    position: relative;
+    width: 50%;
+    top: 880px;
+    left: 7.8rem;
 
-    font-weight: 300;
+    padding: 12px;
+    border-radius: 15px;
 
-    background: none;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
 }
 
+/* nav */
 .aws-navbar {
     position: absolute;
-    width: 7rem;
-    height: 40vh;
-    top: 1150px;
-    left: 120%;  
+    width: 15rem;
+    top: 950px;
+    left: 7.8rem;
     
-    background-color: #222;
-    opacity: 1;
+    align-content: center;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
+
+    display: none;
+    border-radius: 15px;
 }
+
+/* ul */
+.learning-nav {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.box-title {
+    padding: 0px;
+    margin-left: 65px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 60px;
+
+    background: transparent;
+}
+
+/* li */
 .nav-items {
     width: 100%;
-    align-items: center;
+    margin-left: 2rem;
+    background: transparent;
+    transition: 2s;
 }
 
-/* Containers and Kubernets*/
-.containers h3 {
+/* span */
+.learning-text {
+    background: transparent;
+    font-weight: 275;
+    margin: 0.9rem;
+}
+
+.aws-container svg:hover {
+    opacity: .2;
+    transition: .2s;
+}
+
+.aws-container:hover .aws-navbar {
+    display: block;
+    transition: 2s;
+    opacity: 1;
+}
+
+/* ↓ ↓ ↓ Dockers and Kubernets ↓ ↓ ↓ */
+.dockers-images{
     position: relative;
-    top: 1150px;
-    left: 31%;
+    display: flex;
+    width: 100%;
+    top: 806px;
+    left: 40rem;
 
-    font-weight: 300;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 15px;
 
-    background: none;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
 }
 
-.containers ul {
-    position: relative;
-    display: flexbox;
-    top: 1185px;
-    left: 31%;
-
-    background: none;
+.dockers-images svg {
+    background: transparent;
+    top: 880px;
+    margin: 5px;
 }
 
-.containers h4 {
-    font-weight: 100;
-    background: none;
+.dockers-navbar .box-title {
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+/* nav */
+.dockers-navbar {
+    position: absolute;
+    width: 15rem;
+    top: 955px;
+    left: 40rem;
+    
+    align-content: center;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
+
+    display: none;
+    border-radius: 15px;
+}
+
+.dockers-images:hover {
+    opacity: .2;
+    transition: .2s;
+}
+
+.dockers-container:hover .dockers-navbar {
+    display: block;
+    transition: 2s;
+    opacity: 1;
 }
 
 /* Footer */
 footer {
     position: absolute;
     width: 100%;
-    top: 2000px;
+    top: 1500px;
     background: none;
 }
 
