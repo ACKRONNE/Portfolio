@@ -23,6 +23,7 @@
 
 *::-webkit-scrollbar {
     width: 0.25rem;
+    height: 0.25rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -267,6 +268,8 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
  }
 
  /* Skills */
+
+ /* Principal Title */
 .skills h2{
     position: absolute;
     top: 690px;
@@ -296,23 +299,57 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
 .languages-navbar {
     position: absolute;
     width: 7rem;
-    height: 40vh;
+    height: 27vh;
     top: 780px;
     left: 10%;
 
     transition: width 600ms ease;
-    background-color: #222;
+
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
+
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     opacity: 1;
+}
+
+.languages-navbar::-webkit-scrollbar , .tools-navbar::-webkit-scrollbar{
+    width: 0;
+    height: 0px;
+}
+
+.languages-navbar:hover::-webkit-scrollbar , .tools-navbar:hover::-webkit-scrollbar {
+    width: 0.15rem;
+    opacity: 1;
+}
+
+.languages-navbar::-webkit-scrollbar-corner , .tools-navbar::-webkit-scrollbar-corner{
+    display: none;
+}
+
+.languages-navbar::-webkit-scrollbar-thumb , .tools-navbar::-webkit-scrollbar-thumb {
+    width: 0;
+    border-radius: 0px;
+    background-color: #bbbbbb;
 }
 
 /* title */
 h3 {
-    font-weight: 100;
-    background: none;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    
+    letter-spacing: 0.065em;
 
+    background: none;            
     text-align: center;
+}
+
+.languages-navbar h3 {
+    color: #FF1808;
+    transition: 2s;
 }
 
 /* ul */
@@ -324,22 +361,20 @@ h3 {
     flex-direction: column;
     align-items: center;
 
-    background-color: #222;
+    background: none;
 }
 
 /* li */
 .nav-item {
     width: 100%;
     align-items: center;
+    margin: 0.9rem;
     margin-top: 20px;
-    background-color: #222;
 }
 
 /* Span */
 .link-text {
     display: none;
-    margin: 0.9rem;
-    margin-left: 1rem;
     transition: width 600ms ease;
     background-color: transparent;
 }
@@ -347,18 +382,30 @@ h3 {
 /* images */
 .nav-item svg {
     min-width: 2rem;
-    margin: 0 1.5rem;
-    /* filter: drop-shadow(0 0 5px #ffffff7e) 
-            drop-shadow(0 0 10px #807e7e); */
+    margin: 0 2.5rem;
+    filter: drop-shadow(0 0 1px #ffffff7e) 
+            drop-shadow(0 0 2px #807e7e);
+    
     background-color: transparent;            
 }
 
 .languages-navbar:hover {
-    width: 16rem;
+    width: 12rem;
+}
+
+.languages-navbar .nav-item svg:hover {
+    filter: drop-shadow(0 0 4px #0059ff7e) 
+            drop-shadow(0 0 2px #9500ff);
 }
 
 .languages-navbar:hover .link-text {
+    transition: 1s;
     display: block;
+}
+
+.languages-navbar:hover h3 {
+    text-shadow: 0px 0px 5px #FF1808;
+    transition: 0.3s;
 }
 
 /* ↓ ↓ ↓ Web ↓ ↓ ↓*/
@@ -367,21 +414,31 @@ h3 {
     width: 7rem;
     height: 27vh;
     top: 780px;
-    left: 20%;
+    left: calc(17% + 8rem);
 
     transition: width 600ms ease;
-    background-color: #222;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
     border-radius: 10px;
     overflow: hidden;
     opacity: 1;
 }
+.web-navbar h3 {
+    color: #DA1727;
+    transition: 2s;
+}
 
 .web-navbar:hover {
-    width: 16rem;
+    width: 11.7rem;
 }
 
 .web-navbar:hover .link-text {
     display: block;
+}
+
+.web-navbar:hover h3 {
+    text-shadow: 0px 0px 5px #DA1727;
+    transition: 0.3s;
 }
 
 /* ↓ ↓ ↓ Data Base ↓ ↓ ↓*/
@@ -390,21 +447,32 @@ h3 {
     width: 7rem;
     height: 27vh;
     top: 780px;
-    left: 30%;
+    left: calc(25% + 15rem);
 
     transition: width 600ms ease;
-    background-color: #222;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
     border-radius: 10px;
     overflow: hidden;
     opacity: 1;
 }
 
+.db-navbar h3 {
+    color: #BC1641;
+    transition: 2s;
+}
+
 .db-navbar:hover {
-    width: 16rem;
+    width: 15rem;
 }
 
 .db-navbar:hover .link-text {
     display: block;
+}
+
+.db-navbar:hover h3 {
+    text-shadow: 0px 0px 5px #BC1641;
+    transition: 0.3s;
 }
 
 /* ↓ ↓ ↓ Frameworks ↓ ↓ ↓*/
@@ -413,44 +481,70 @@ h3 {
     width: 7rem;
     height: 27vh;
     top: 780px;
-    left: 40%;
+    left: calc(44% + 15rem);
 
     transition: width 600ms ease;
-    background-color: #222;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
     border-radius: 10px;
     overflow: hidden;
     opacity: 1;
 }
 
+.frameworks-navbar h3 {
+    color: #74147E;
+    transition: 2s;
+}
+
 .frameworks-navbar:hover {
-    width: 16rem;
+    width: 14rem;
 }
 
 .frameworks-navbar:hover .link-text {
     display: block;
 }
 
+.frameworks-navbar:hover h3 {
+    text-shadow: 0px 0px 5px #74147E;
+    transition: 0.3s;
+}
+
 /* ↓ ↓ ↓ Tools ↓ ↓ ↓*/
 .tools-navbar {
     position: absolute;
-    width: 7rem;
-    height: 72vh;
+    width: 5rem;
+    height: 27vh;
     top: 780px;
-    left: 50%;
+    left: calc(64% + 14rem);
 
     transition: width 600ms ease;
-    background-color: #222;
+    background: rgba(47, 47, 47, 0.3);
+    backdrop-filter: blur(17.5px);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: scroll;
     opacity: 1;
 }
 
+.tools-navbar h3 {
+    color: #1E11C7;
+    transition: 2s;
+}
+
+.tools-navbar .nav-item svg {
+    margin-left: 25px;
+}
+
 .tools-navbar:hover {
-    width: 16rem;
+    width: 14rem;
 }
 
 .tools-navbar:hover .link-text {
     display: block;
+}
+
+.tools-navbar:hover h3 {
+    text-shadow: 0px 0px 5px #1E11C7;
+    transition: 0.3s;
 }
 
 /* Learning */
@@ -461,7 +555,7 @@ h3 {
 
 .learning h2 {
     position: absolute;
-    top: 1030px;
+    top: 840px;
     left: 66px;
     width: 175px;
 
@@ -485,7 +579,7 @@ h3 {
 /* AWS */
 .aws-navbar{ 
     position: absolute;
-    top: 1150px;
+    top: 850px;
 
     font-weight: 300;
 
