@@ -131,15 +131,15 @@
 .principal p {
     position: absolute;
     width: 80%;
-    margin-left: 100px;
-    margin-top: 300px;
+    margin-left: 8%;
+    margin-top: 280px;
     
     font-family: 'Roboto Mono';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
 
-    line-height: 26px;
+    line-height: 30px;
     justify-content: center;
     text-align: justify;    
     background: none;
@@ -153,14 +153,50 @@
     background: none;
  }
 
+ /* button text */
  .download-button h4 {
+    width: 250px;
+    font-size: 18px;
     font-weight: 100;
-    opacity: .4;
-    background: none;
+    opacity: .7;
     margin-top: 20px;
+    /* background: aquamarine; */
+ }
+ .download-button span {
+    /* background: none; */
+ }
+ .if {
+    font-weight: 400;
+    color: #FF1808;
+    background: none;
+    filter: drop-shadow(0 0 2px #FF1808) 
+            drop-shadow(0 0 4px #FF00E8);            
  }
 
-/* button effect  */
+ .par {
+    color: #FF8A00;
+    background: none;
+    filter: drop-shadow(0 0 2px #FF8A00) 
+            drop-shadow(0 0 4px #FF1808);
+ }
+
+ .cor1 {
+    color: #BDFF00;
+    background: none;
+    filter: drop-shadow(0 0 2px #5eff00) 
+            drop-shadow(0 0 4px #BDFF00);
+ }
+
+ .cor2 {
+    position: relative;
+    top: 110px;
+    color: #BDFF00;
+    background: none;
+    filter: drop-shadow(0 0 2px #5eff00) 
+            drop-shadow(0 0 4px #BDFF00);
+ }
+
+/* Button effect  */
 @property --d{
     syntax: '<angle>';
     inherits: true;
@@ -169,8 +205,8 @@
 
 .download-button a{
     position: relative;
-    top: 50px;
-    left: 20%;
+    top: 20px;
+    left: 25%;
     padding: 8px;
 
     font-weight: 400;
@@ -220,10 +256,6 @@
       position: absolute;
       content: "";
       inset: -20px;
-
-      background:
-          radial-gradient(20px at left  30px top    10px,#FF1808 98%,#0000),
-          radial-gradient(20px at right 30px bottom 10px,#730C38 98%,#0000);
       filter: blur(60px);
       opacity: .5;
       }
@@ -246,29 +278,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
       background-color: #222;
  }
 
-/* Text if you want more details */
- .if {
-    font-size: 18px;
-    font-size: 400;
-    color: #FF1808;
-    background: none;
-
-    filter: drop-shadow(0 0 2px #FF1808) 
-            drop-shadow(0 0 4px #FF00E8);
- }
-
- .ac{
-    font-size: 18px;
-    font-size: 400;
-    color: #FF8A00;
-    background: none;
-
-    filter: drop-shadow(0 0 2px #FF8A00) 
-            drop-shadow(0 0 4px #FF1808);
- }
-
  /* Skills */
-
  /* Principal Title */
 .skills h2{
     position: absolute;
@@ -393,11 +403,6 @@ h3 {
     width: 12rem;
 }
 
-.languages-navbar .nav-item svg:hover {
-    filter: drop-shadow(0 0 4px #0059ff7e) 
-            drop-shadow(0 0 2px #9500ff);
-}
-
 .languages-navbar:hover .link-text {
     transition: 1s;
     display: block;
@@ -427,6 +432,10 @@ h3 {
     color: #DA1727;
     transition: 2s;
 }
+
+.web-navbar svg {
+    margin-top: -12px;   
+}    
 
 .web-navbar:hover {
     width: 11.7rem;
@@ -460,6 +469,10 @@ h3 {
 .db-navbar h3 {
     color: #BC1641;
     transition: 2s;
+}
+
+.db-navbar svg {
+    margin-top: -12px;   
 }
 
 .db-navbar:hover {
@@ -496,6 +509,10 @@ h3 {
     transition: 2s;
 }
 
+.frameworks-navbar svg {
+    margin-top: -10px;   
+}
+
 .frameworks-navbar:hover {
     width: 14rem;
 }
@@ -530,7 +547,8 @@ h3 {
     transition: 2s;
 }
 
-.tools-navbar .nav-item svg {
+.tools-navbar svg {
+    margin-top: -11px;
     margin-left: 25px;
 }
 
@@ -555,7 +573,7 @@ h3 {
 
 .learning h2 {
     position: absolute;
-    top: 840px;
+    top: 800px;
     left: 66px;
     width: 175px;
 
