@@ -458,16 +458,17 @@ h3 {
     position: absolute;
     top: 302px;
 }
+
 .learning h2 {
-    position: relative;
-    top: 1090px;
+    position: absolute;
+    top: 1030px;
     left: 66px;
     width: 175px;
 
     font-weight: 400;
     font-size: 40px;
-    line-height: 50px;
-
+    line-height: 50px;  
+    
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden;
@@ -478,35 +479,35 @@ h3 {
     background: none;
     
     filter: drop-shadow(0 0 5px #ffffff7e) 
-            drop-shadow(0 0 10px #807e7e);    
+            drop-shadow(0 0 10px #807e7e);
 }
 
 /* AWS */
-.aws h3 {
-    position: relative;
+.aws-navbar{ 
+    position: absolute;
     top: 1150px;
-    left: 9%;
 
     font-weight: 300;
 
     background: none;
 }
 
-.aws ul {
-    position: relative;
-    display: flexbox;
-    top: 1185px;
-    left: 9%;
-
-    background: none;
+.aws-navbar {
+    position: absolute;
+    width: 7rem;
+    height: 40vh;
+    top: 1150px;
+    left: 120%;  
+    
+    background-color: #222;
+    opacity: 1;
+}
+.nav-items {
+    width: 100%;
+    align-items: center;
 }
 
-.aws h4 {
-    font-weight: 100;
-    background: none;
-}
-
-/* Containers */
+/* Containers and Kubernets*/
 .containers h3 {
     position: relative;
     top: 1150px;
@@ -535,7 +536,7 @@ h3 {
 footer {
     position: absolute;
     width: 100%;
-    top: 1355px;
+    top: 2000px;
     background: none;
 }
 
