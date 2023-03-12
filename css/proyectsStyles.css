@@ -23,6 +23,7 @@
 
 *::-webkit-scrollbar {
   width: 0.25rem;
+  height: 0.25rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -109,14 +110,16 @@ nav a:hover{
 /*  Proyects Cards  */
 #cards {
     position: absolute;
+    width: 100%;
     top: 250px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 15%;
+    /* background: aquamarine; */
 
     gap: 8px;  
-    max-width: 916px;
-    width: calc(100% - 20px);
+    /* max-width: 916px; */
+    width: calc(100% - 400px);
   }
   
   #cards:hover > .card::after {
@@ -305,15 +308,16 @@ nav a:hover{
 footer {
   position: absolute;
   width: 100%;
-  top: 900px;
+  top: 400px;
+
   background: none;
 }
 
 .footer-line {
   position: relative;
   height: 1px;
-  width: 90%;
-  left: calc(100% - 95.4%);
+  width: 70rem;
+  left: -80px;
 
   opacity: .2;
   background: #FFFFFF;
@@ -352,7 +356,7 @@ footer h4{
   top: 12px;
 
   font-size: 12px;
-  left: calc(100% - 11.4%);
+  left: 950px;
 
   cursor: pointer;
 }
