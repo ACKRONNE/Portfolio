@@ -13,7 +13,7 @@
     list-style: none;
 
     scroll-behavior: smooth;
-    /* mix-blend-mode:difference; */
+    /* mix-blend-mode: difference; */
 }
 
 *::selection {
@@ -76,13 +76,97 @@ nav {
     filter: blur(0px);
   }
 
+/* Waterfall */
+.item {
+    width: 1px;
+    height: 50px;
+
+    animation: waterfall 7s linear infinite;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes waterfall {
+    0% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(1080px);
+        opacity: 0;
+    }
+}
+
+.item:nth-child(1) {
+    animation-delay: 2s;
+    background: linear-gradient(#DA1727 0%, #FF1D56 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #DA1727) 
+            drop-shadow(0 0 4px #FF1D56);
+}
+
+.item:nth-child(2) {
+    animation-delay: 1.3s;
+    background: linear-gradient(#1DFF77 0%,#BDFF00 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #1DFF77) 
+            drop-shadow(0 0 4px #BDFF00);
+}
+
+.item:nth-child(3) {
+    animation-delay: 3s;
+    background: linear-gradient(#FF1808 0%,#FAFF1D 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #FF1808) 
+            drop-shadow(0 0 4px #FAFF1D);
+}
+
+.item:nth-child(4) {
+    animation-delay: 4.5s;
+    background: linear-gradient(#1E11C7 0%,#581DFF 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #1E11C7) 
+            drop-shadow(0 0 4px #581DFF);
+}
+
+.item:nth-child(5) {
+    animation-delay: 2.2s;
+    background: linear-gradient(#00FFC2 0%,#00FF66 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #00FFC2) 
+            drop-shadow(0 0 4px #00FF66);
+}
+
+.item:nth-child(6) {
+    animation-delay: 6s;
+    background: linear-gradient(#4B0E8C 0%,#FAFF1D 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #4B0E8C) 
+            drop-shadow(0 0 4px #FAFF1D);
+}
+
+.item:nth-child(7) {
+    animation-delay: 7s;
+    background: linear-gradient(#003D80 0%,#DA1727 50%, rgb(255, 255, 255) 100%);
+    filter: drop-shadow(0 0 2px #003D80) 
+            drop-shadow(0 0 4px #DA1727);
+}  
+
 /* Form */
 .container {
     position: absolute;
     width: 100%;
     top: 120px;
     height: 100vh;
-    background-color: transparent;
+
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +181,8 @@ form {
 
     width: 70%;
     max-width: 600px;
+    background: rgba(16, 16, 16, 0.3);
+    backdrop-filter: blur(4px);
 }
 
 form h1 , form h2 {
@@ -140,7 +226,7 @@ form input , form textarea {
     font-size: 14px;
 
     background: #151515;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 
     border-radius: 10px;
     outline: none;
