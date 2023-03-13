@@ -20,6 +20,22 @@
     color: black;
 }
 
+/* .cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: 0.05s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+  
+ul a:hover ~ .cursor {
+    transform: scale(6);
+} */
+
 /* Logo.png */
 .logo {
     position: absolute;
@@ -32,20 +48,12 @@
 }
 
 /* Active */
-
-#en-active ~ .en {
-    visibility: visible;
-}
-#en-active ~ .en {
-    visibility: visible;
-}
-
-.es {
-    visibility: hidden;
+a.active{
+    background: #204829;
 }
 
 /* Language */
-.lan{
+.langs{
     position: absolute;
     height: 0px;
     width: 59px;
@@ -57,7 +65,7 @@
     justify-content: space-between;
 }
 
-.lan a{
+.langs a{
     position: relative;
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -66,12 +74,18 @@
     transition: .7s;
 }
 
-.lan a:hover{
+.langs a:hover{
     background: none;
     filter: drop-shadow(0 0 6px #ffffff) 
             drop-shadow(0 0 11px #807e7e);
     transition: .7s;            
     opacity: 1;
+}
+
+a.active{
+    filter: drop-shadow(0 0 6px #ffffff) 
+            drop-shadow(0 0 11px #807e7e);
+    opacity: 1;            
 }
 
 /* AMPARO OBANDO */
@@ -95,7 +109,7 @@ h1 {
 }
 
 /* SOFTWARE ENGINEER, BACK END & CLOUD DEVELOPER. */
-.en h2 {
+h2 {
     position: absolute;
     width: 475px;
     height: 26px;
@@ -112,7 +126,7 @@ h1 {
 }
 
 /* Exploration zone */
-.en .exp{
+.exp{
     position: absolute;
     left: 85%;
     top: -40px;
@@ -123,11 +137,11 @@ h1 {
     background-color: transparent;
 }
 
-.en .exp ul {
+.exp ul {
     width: 0px;
 }
 
-.en .exp li {
+.exp li {
     position: relative;
     display: flex;    
     
@@ -142,29 +156,20 @@ h1 {
 
     transform: rotate(90deg);
 }
-.en ul li a {
+ul li a {
     transform: rotate(0deg);
     transition: 0.5s;
     background: none;
 }
-.en ul:hover li a {
+ul:hover li a {
     filter: blur(5px);
     transition: 0.5s;
 }
-.en ul li:hover a {
+ul li:hover a {
     filter: blur(0px);
     transform: rotate(-90deg);
     filter: drop-shadow(0 0 5px #ffffff7e) 
             drop-shadow(0 0 10px #807e7e);
-}
-
-/* Game Zone */
-.material-symbols-rounded { /* play button */
-    position: absolute;
-    width: 159px;
-    height: 0px;
-    left: 190px;
-    top: 404px;        
 }
 
 .game {             /*Square*/
@@ -179,63 +184,4 @@ h1 {
     backdrop-filter: blur(0px);
     
     border-radius: 20px;
-}
-
-/* ↓ ↓ ↓ Spanish zone ↓ ↓ ↓ */
-.es h2 {
-    position: absolute;
-    width: 475px;
-    height: 26px;
-    left: 50px;
-    top: 590px;
-    
-    font-family: 'Yantramanav';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;   
-}
-
-.es .exp{
-    position: absolute;
-    left: 85%;
-    top: -50px;
-
-    display: flex;
-    text-align: right;
-    text-shadow: 0px 0px 4px #000000;
-    background-color: transparent;
-}
-
-.es .exp ul {
-    width: 0px;
-}
-
-.es .exp li {
-    position: relative;
-    display: flex;    
-    
-    width: 90px;
-    justify-content: right;
-    text-align: left;
-    
-    letter-spacing: 0.080em;
-    font-weight: 300;
-    font-size: 16px;
-    margin-top:170px;
-
-    transform: rotate(90deg);
-}
-.es ul li a {
-    background: none;
-}
-.es ul:hover li a {
-    filter: blur(5px);
-    transition: 1s;
-}
-.es ul li:hover a {
-    filter: blur(0px);
-    transform: rotate(-90deg);
-    filter: drop-shadow(0 0 5px #ffffff7e) 
-            drop-shadow(0 0 10px #807e7e);
 }

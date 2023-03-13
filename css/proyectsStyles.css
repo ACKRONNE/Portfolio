@@ -35,8 +35,8 @@
   background: #fff;
 }
 
-/* ↓ ↓ ↓  Cursor  ↓ ↓ ↓
-.cursor {
+/*  Cursor */
+/* .cursor {
   position: absolute;
   width: 20px;
   height: 20px;

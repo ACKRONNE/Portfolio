@@ -22,6 +22,8 @@
 </head>
 
 <body>
+    <!-- cursor -->
+    <div class="cursor"></div>
 
     <!-- Waterfall -->
     <div class="lines">
@@ -38,52 +40,31 @@
     <img class="logo" src="images/Top-Logo.png">
 
     <!--Language-->
-    <nav class="lan">
-        <a href="#English" data-text="EN" id="en-active">EN</a>
-        <a href="#Spanish" data-text="ES" id="es-active">ES</a>       
+    <nav class="langs">
+        <a href="#" language="english" class="active">EN</a>
+        <a href="#" language="spanish">ES</a>       
     </nav>
 
-    <!-- English zone -->
-    <div class="en">
         <!--Principal title-->
         <div>
-            <h1>AMPARO OBANDO</h1>
+            <h1 class="title">AMPARO OBANDO</h1>
 
             <!-- Description -->
-            <h2>Software Engineer, Back-End & Cloud Developer.</h2>
+            <h2 class="description">Software Engineer, Back-End & Cloud Developer.</h2>
         </div>
 
         <!--Exploration Zone-->
         <nav class="exp">
             <!-- Content -->
             <ul>
-                <li><a href="about.html" data-text="ABOUT">ABOUT</a></li>    
-                <li><a href="proyects.html" data-text="PROYECTS">PROYECTS</a></li>
-                <li><a href="contact.html" data-text="CONTACT">CONTACT</a></li>
-            </ul>
-        </nav>    
-    </div>
-
-    <!-- Spanish Zone -->
-    <div class="es">
-        <!--Principal title-->
-        <div>
-            <h1>AMPARO OBANDO</h1>
-
-            <!-- Description -->
-            <h2>Desarrolladora de Software, Back-End & Cloud Developer.</h2>
-        </div>
-
-        <!--Exploration Zone-->
-        <nav class="exp">
-            <!-- Content -->
-            <ul>
-                <li><a href="about.html" data-text="SOBRE MI">SOBRE MI</a></li>    
-                <li><a href="proyects.html" data-text="PROYECTOS">PROYECTOS</a></li>
-                <li><a href="contact.html" data-text="CONTACTO">CONTACTO</a></li>
+                <li><a href="about.html" data-text="ABOUT" class="item1">ABOUT</a></li>    
+                <li><a href="proyects.html" data-text="PROYECTS" class="item2">PROYECTS</a></li>
+                <li><a href="contact.html" data-text="CONTACT" class="item3">CONTACT</a></li>
             </ul>
         </nav>
     </div>
     
 </body>
+
+<script src="js/homeApp.js"></script>
 </html>
