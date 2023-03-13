@@ -63,32 +63,38 @@
 }
 
 /*  Exploration Zone */
- nav {
+/* nav */
+.principal-navbar {
     position: absolute;
     top: 60px;
     left: 65%;
-  }
-
-nav li {
-    display: inline-flex;
-    background: none;   
-}
+    width: 0;
   
-nav a{
-    margin: 0px 40px;
-    font-weight: 400;
-    background: none;
     transition: 0.5s;
-}
-
-nav:hover a{
+  }
+  
+  /* ul */
+  .principal-nav {
+    display: flex;
+    
+  }
+  
+  .principal-nav-item {
+    margin-left: 75px;
+  }
+  
+  .principal-navbar a{
+    transition: 0.5s;
+  }
+  
+  nav:hover a{
     filter: blur(5px);
     transition: 0.5s;
-}
-
-nav a:hover{
+  }
+  
+  nav a:hover{
     filter: blur(0px);
-}
+  }
 
 /* Waterfall */
 .item {
@@ -119,7 +125,7 @@ nav a:hover{
         opacity: 0.2;
     }
     100% {
-        transform: translateY(1500px);
+        transform: translateY(232vh);
         opacity: 0;
     }
 }
@@ -146,7 +152,7 @@ nav a:hover{
 }
 
 .item:nth-child(4) {
-    animation-delay: 4.5s;
+    animation-delay: 7s;
     background: linear-gradient(#1E11C7 0%,#581DFF 50%, rgb(255, 255, 255) 100%);
     filter: drop-shadow(0 0 2px #1E11C7) 
             drop-shadow(0 0 4px #581DFF);
@@ -167,7 +173,7 @@ nav a:hover{
 }
 
 .item:nth-child(7) {
-    animation-delay: 7s;
+    animation-delay: 4.5s;
     background: linear-gradient(#003D80 0%,#DA1727 50%, rgb(255, 255, 255) 100%);
     filter: drop-shadow(0 0 2px #003D80) 
             drop-shadow(0 0 4px #DA1727);

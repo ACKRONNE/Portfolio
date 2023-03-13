@@ -64,21 +64,27 @@ nav a:hover ~ .cursor {
 }
 
 /*  Exploration Zone */
-nav {
+/* nav */
+.principal-navbar {
   position: absolute;
   top: 60px;
   left: 65%;
+  width: 0;
+
+  transition: 0.5s;
 }
 
-nav li {
-  display: inline-flex;
-  background: none;
+/* ul */
+.principal-nav {
+  display: flex;
+  
 }
 
-nav a{
-  margin: 0px 40px;
-  font-weight: 400;
-  background: none;
+.principal-nav-item {
+  margin-left: 75px;
+}
+
+.principal-navbar a{
   transition: 0.5s;
 }
 
@@ -120,7 +126,7 @@ nav a:hover{
       opacity: 0.2;
   }
   100% {
-      transform: translateY(700px);
+      transform: translateY(103vh);
       opacity: 0;
   }
 }
@@ -147,7 +153,7 @@ nav a:hover{
 }
 
 .item:nth-child(4) {
-  animation-delay: 4.5s;
+  animation-delay: 7s;
   background: linear-gradient(#1E11C7 0%,#581DFF 50%, rgb(255, 255, 255) 100%);
   filter: drop-shadow(0 0 2px #1E11C7) 
           drop-shadow(0 0 4px #581DFF);
@@ -168,7 +174,7 @@ nav a:hover{
 }
 
 .item:nth-child(7) {
-  animation-delay: 7s;
+  animation-delay: 4.5s;
   background: linear-gradient(#003D80 0%,#DA1727 50%, rgb(255, 255, 255) 100%);
   filter: drop-shadow(0 0 2px #003D80) 
           drop-shadow(0 0 4px #DA1727);
