@@ -125,7 +125,7 @@
         opacity: 0.2;
     }
     100% {
-        transform: translateY(232vh);
+        transform: translateY(231vh);
         opacity: 0;
     }
 }
@@ -152,7 +152,7 @@
 }
 
 .item:nth-child(4) {
-    animation-delay: 7s;
+    animation-delay: 4.5s;
     background: linear-gradient(#1E11C7 0%,#581DFF 50%, rgb(255, 255, 255) 100%);
     filter: drop-shadow(0 0 2px #1E11C7) 
             drop-shadow(0 0 4px #581DFF);
@@ -173,7 +173,7 @@
 }
 
 .item:nth-child(7) {
-    animation-delay: 4.5s;
+    animation-delay: 7s;
     background: linear-gradient(#003D80 0%,#DA1727 50%, rgb(255, 255, 255) 100%);
     filter: drop-shadow(0 0 2px #003D80) 
             drop-shadow(0 0 4px #DA1727);
@@ -404,7 +404,7 @@ transition:.1s, 99999s 99999s transform, 99999s 99999s --d;
     backdrop-filter: blur(4px);
 
     border-radius: 10px;
-    overflow: auto;
+    overflow: scroll;
     opacity: 1;
 }
 
@@ -452,6 +452,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     list-style: none;
     padding: 0;
@@ -466,6 +467,9 @@ h3 {
     align-items: center;
     margin: 0.9rem;
     margin-top: 20px;
+    display: flex;
+
+    background: none;
 }
 
 /* Span */
@@ -790,9 +794,10 @@ h3 {
 /* nav */
 .dockers-navbar {
     position: absolute;
-    width: 15rem;
+    width: 27rem;
     top: 955px;
     left: 40rem;
+    padding-bottom: 0.8rem;
     
     align-content: center;
     background: rgba(47, 47, 47, 0.3);
@@ -817,7 +822,7 @@ h3 {
 footer {
     position: absolute;
     width: 100%;
-    top: 1500px;
+    top: 1460px;
     background: none;
 }
 
